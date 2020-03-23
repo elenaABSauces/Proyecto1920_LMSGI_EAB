@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Autor.- Elena de Antón
+ Fecha.- 21/03/2020
+ Documento.- 05.xml
+-->
+<garaje xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="05.xsd">
+  <coches>
+    <coche>
+      <matricula>1234A</matricula>
+      <propietario>P01</propietario>
+      <marca>Seat</marca>
+      <modelo>Leon 1.6 TDI</modelo>
+      <color>Gris</color>
+      <km>125000</km>
+    </coche>
+    <coche>
+      <matricula>4444B</matricula>
+      <propietario>P02</propietario>
+      <marca>Seat</marca>
+      <modelo>Altea XL</modelo>
+      <color>Oro</color>
+      <km>90000</km>
+    </coche>
+    <coche>
+      <matricula>1233A</matricula>
+      <propietario>P03</propietario>
+      <marca>Seat</marca>
+      <modelo>Ibiza 1.4 TDI</modelo>
+      <color>Rojo</color>
+      <km>145000</km>
+    </coche>
+    <coche>
+      <matricula>0011A</matricula>
+      <propietario>P04</propietario>
+      <marca>Volkswagen</marca>
+      <modelo>Golf 1.6 TDI</modelo>
+      <color>Negro</color>
+      <km>220000</km>
+    </coche>
+    <coche>
+      <matricula>1100B</matricula>
+      <propietario>P05</propietario>
+      <marca>Volkswagen</marca>
+      <modelo>Polo 1.2 Advance</modelo>
+      <color>Rojo</color>
+      <km>300000</km>
+    </coche>
+    <coche>
+      <matricula>1001A</matricula>
+      <propietario>P05</propietario>
+      <marca>Renault</marca>
+      <modelo>Clio Authentique 1.3</modelo>
+      <color>Rojo</color>
+      <km>10000</km>
+    </coche>
+    <coche>
+      <matricula>1222C</matricula>
+      <propietario>P06</propietario>
+      <marca>Renault</marca>
+      <modelo>Megane Berlina GT</modelo>
+      <color>Acero</color>
+      <km>240000</km>
+    </coche>
+    <coche>
+      <matricula>2211C</matricula>
+      <propietario>P07</propietario>
+      <marca>Ford</marca>
+      <modelo>Konnect Combi</modelo>
+      <color>Marino</color>
+      <km>312000</km>
+    </coche>
+    <coche>
+      <matricula>1234C</matricula>
+      <propietario>P08</propietario>
+      <marca>Ford</marca>
+      <modelo>Ranger</modelo>
+      <color>Verde</color>
+      <km>125600</km>
+    </coche>
+  </coches>
+  <reparaciones>
+    <reparacion codigo="J0001">
+      <matricula>1234A</matricula>
+      <descripcion>Fallo elevalunas</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/03</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0002">
+      <matricula>4444B</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0003">
+      <matricula>4444B</matricula>
+      <descripcion>Cambio neumaticos</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0004">
+      <matricula>0011A</matricula>
+      <descripcion>Cambio rueda</descripcion>
+      <fecha_entrada>2013/06/04</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0005">
+      <matricula>1100B</matricula>
+      <descripcion>Fallo encendido</descripcion>
+      <fecha_entrada>2013/06/04</fecha_entrada>
+      <fecha_salida>2013/06/06</fecha_salida>
+      <horas>20</horas>
+    </reparacion>
+    <reparacion codigo="J0006">
+      <matricula>1001A</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/05</fecha_entrada>
+      <fecha_salida>2013/06/05</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0007">
+      <matricula>1222C</matricula>
+      <descripcion>Fallo electrico</descripcion>
+      <fecha_entrada>2013/06/06</fecha_entrada>
+      <fecha_salida>2013/06/08</fecha_salida>
+      <horas>10</horas>
+    </reparacion>
+    <reparacion codigo="J0008">
+      <matricula>2211C</matricula>
+      <descripcion>Cambio rueda</descripcion>
+      <fecha_entrada>2013/06/06</fecha_entrada>
+      <fecha_salida>2013/06/06</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0009">
+      <matricula>1234C</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/07</fecha_entrada>
+      <fecha_salida>2013/06/07</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+  </reparaciones>
+</garaje>
+
+<!-- 
+1. Los elementos de cada coche. 
+//coche 
+
+2. Los elementos de cada reparación. 
+//reparacion 
+
+3. El contenido de La matrícula de los coches. 
+//matricula/text() 
+
+4. Todos los nodos (elementos y contenido) de los coches de la marca Renault. 
+/garaje/coches/coche[marca="Renault"] 
+
+5. Todos los nodos de los coches de más de 200000 km. 
+/garaje/coches/coche[km>=200000] 
+
+6. El contenido del color del coche de matrícula 1234C. 
+/garaje/coches/coche[matricula="1234C"]/color/text() 
+
+7. El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B. 
+/garaje/reparaciones/reparacion[matricula="4444B"]/descripcion/text() 
+
+8. El contenido de la descripción de la reparación de código J0005. 
+/garaje/reparaciones/reparacion[@codigo="J0005"]/descripcion/text() 
+
+9. Suma de las horas invertidas reparando coches. 
+sum(//horas) 
+
+10. Número de coches en el documento. 
+count(//coche) 
+
+11. Selecciona todos los elementos del primer coche 
+//coche[1] 
+
+12. Selecciona todos los elementos de la última reparación 
+//reparacion[last()] 
+
+13. Selecciona todos los elementos del coche con marca Seat y color rojo 
+//coche[color='Rojo' and marca='Seat'] 
+
+14. Propietario del coche modelo Polo 1.2 Advance 
+//coche[modelo='Polo 1.2 Advance']/propietario/text() 
+
+15. Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06 
+//reparacion[fecha_entrada='2013/06/06']/descripcion/text() 
+
+16. Seleccionar los coches rojos y grises 
+//coche[color='Rojo']|//coche[color='Gris'] 
+
+17. Número de coches que entraron a reparar el 2013/06/03 
+count(//reparacion[fecha_entrada='2013/06/03']) 
+
+18. Contenido del modelo del propietario P01 
+//coche[propietario='P01']/modelo/text() 
+
+19. Código de la reparación con fecha de entrada 2013/06/03 
+//reparacion[fecha_entrada='2013/06/03']/@codigo 
+
+20. Suma las horas de reparación del coche con matrícula 4444B 
+sum(//reparacion[matricula='4444B']/horas) 
+
+21. Matrícula de los coches marca Ford y Volkswagen 
+//coche[marca='Ford']/matricula/text()|//coche[marca='Volkswagen']/matricula/text()
+
+
+
+-->
