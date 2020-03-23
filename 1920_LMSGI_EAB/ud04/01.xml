@@ -16,9 +16,9 @@
 	<!ELEMENT mail (remitente?,asunto?,fecha?,destinatarios?,mensaje?,adjuntar?)>  
 ]>  
 <mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SchemaXML01.xsd">
-	<remitente>micorreo@correo.es</remitente>
+	<remitente>micorreo@gmail.es</remitente>
 	<asunto>Enviar un mensaje</asunto>
-	<fecha>2020-01-14</fecha>
+	<fecha>2020-01-20</fecha>
 	<destinatarios>
 		<correo>sucorreo@correo.es</correo>
 		<correo>otrocorreo@correo.es</correo>
