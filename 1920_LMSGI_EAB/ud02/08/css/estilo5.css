@@ -1,0 +1,11 @@
+/* 
+    Created on : Notepad ++
+    Author     : Elena de Antón Barrio
+    File        : estilo5.css
+    Description : Trabajando con selectores
+*/
+
+body {background-color: #009cde;}
+.hijo {border: solid red 1px;}
+
+

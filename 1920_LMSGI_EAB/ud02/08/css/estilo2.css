@@ -1,0 +1,13 @@
+/* 
+    Created on : Notepad ++
+    Author     : Elena de Antón Barrio
+    File        : estilo2.css
+    Description : Trabajando con selectores
+*/
+
+div a {background-color:#009cde; color:#ffffff; text-decoration:none;}
+div div div a {background-color:#ff0000; color:yellow; text-decoration:none;} 
+
+/* Sale en color rojo y amarillo porque se sobrepone a la primera regla porque siempre lee la última regla */
+
+

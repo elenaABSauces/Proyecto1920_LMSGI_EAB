@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE mail [
+	<!ELEMENT remitente (#PCDATA)>
+	<!ELEMENT fecha (#PCDATA)>
+	<!ELEMENT destinatario (correo+)>
+	<!ELEMENT correo (#PCDATA)>
+	<!ELEMENT asunto (#PCDATA)>
+	<!ELEMENT mensaje (#PCDATA)>
+	<!ELEMENT mail (remitente, destinatario, asunto?, mensaje, adjuntos?)>
+	<!ELEMENT destinatarios (correo+)>
+	<!ELEMENT image (#PCDATA)>
+	<!ELEMENT adjuntos (image*)>
+	<!ATTLIST mail fecha CDATA #REQUIRED>
+	<!ATTLIST image type (imagepng|imagejpg|imageico) #REQUIRED>
+]>
+<mail fecha="14/01/2020" >
+	<remitente> elena.antbar@educa.jcyl.es</remitente>
+	<destinatario>
+		<correo>eduardo@educa.jcyl.es</correo>
+		<correo>maria@educa.jcyl.es</correo>
+	</destinatario>
+	<asunto>Fiesta de fin de curso</asunto>
+	<mensaje> A las 20:00 en ... </mensaje>
+	<adjuntos>
+		<image type="imagepng">foto1.png</image>
+		<image type="imagepng">foto2.png</image>
+	</adjuntos>
+
+	
+</mail>

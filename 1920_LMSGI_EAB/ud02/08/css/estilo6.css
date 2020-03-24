@@ -1,0 +1,11 @@
+/* 
+    Created on : Notepad ++
+    Author     : Elena de Antón Barrio
+    File        : estilo6.css
+    Description : Trabajando con selectores
+*/
+
+.padre+p{background-color:#009cde;}
+
+
+

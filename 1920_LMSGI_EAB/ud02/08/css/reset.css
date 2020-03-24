@@ -1,0 +1,11 @@
+﻿/* 
+    Created on  : Notepad ++
+    Author      : Elena de Antón Barrio
+    File        : reset.css
+    Description : Resetear los estilos
+*/
+div , p {border: 1px gray; border-style: solid; margin:10px;}
+
+
+
+

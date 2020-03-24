@@ -1,0 +1,70 @@
+/* 
+    Created on : 06-dic-2019
+    Author     : Elena de Antón Barrio
+    Colores utilizados: https://www.w3schools.com/colors/colors_groups.asp
+*/
+
+body{
+	font-family: calibri, arial, sans-serif;
+	background-image: url(../images/Le_petit_prince.png);
+	background-size:28.5%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin-right:20%;
+}
+h1{
+	background-color:#FFA500;
+	color:#FF0000;
+	font-weight:bold;
+}
+h2{
+	color:Crimson;
+	font-weight:bold;
+}
+.tabla1 caption, .tabla2 caption{
+	font-style:italic;
+	color:green;
+	caption-side:bottom;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+.tabla1{
+   margin-left:10%;
+   margin-right:15%;
+   padding:5px;
+   border-collapse:collapse;
+}
+.tabla1 td{
+	border-bottom:1px solid #DDD;
+	padding:5px;
+	text-align:left;
+}
+.tabla1 th{
+	border-bottom:1px solid #DDD;
+	padding:5px;
+	text-align:center;
+}
+.tabla2{
+	font-family:verdana, tahoma;
+	font-size:0.875em;
+	border-collapse:collapse;
+}
+.tabla2 td{
+	border:1px solid #DDD;
+	padding:5px;
+}
+.tabla2 th{
+	background-color:MediumSeaGreen;
+	color:white;
+	vertical-align:bottom;
+	border:1px solid #DDD;
+	padding:5px;
+	text-align:center;
+}
+.tabla2 tr:nth-child(5), .tabla tr:nth-child(3){
+	background-color:#F5F5F5;
+}
+.tabla2 tr:nth-last-child(2n){
+	background-color:#E0FFFF;
+}

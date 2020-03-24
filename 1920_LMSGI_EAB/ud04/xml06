@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE historia [ 
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT historia (hecho_historico+)>
+	<!ELEMENT hecho_historico (descripcion, fecha)>
+	<!ELEMENT fecha EMPTY>
+	<!ELEMENT capital (nomcapital)>
+	<!ATTLIST fecha dia CDATA #REQUIRED>
+	<!ATTLIST fecha mes CDATA #REQUIRED>
+	<!ATTLIST fecha anyo CDATA #REQUIRED>
+]>
+<historia>
+	<hecho_historico>
+		<descripcion>Se funda Youtube</descripcion>
+		<fecha dia="15" mes="2" anyo="2005"/>
+	</hecho_historico>
+	
+	<hecho_historico>
+		<descripcion>Se funda Google</descripcion>
+		<fecha dia="4" mes="9" anyo="1998"/>
+	</hecho_historico>
+	
+	<hecho_historico>
+		<descripcion>Se funda Facebook</descripcion>
+		<fecha dia="4" mes="2" anyo="2004"/>
+	</hecho_historico>
+	
+</historia>

@@ -1,0 +1,94 @@
+/* 
+    Created on  : 06-dic-2019
+    Author      : Elena de Antón Barrio
+    File        : estilos.css
+*/
+body{
+	background-image:url(../images/Le_petit_prince.png);
+	background-size:290px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:100% 0%;
+}
+.outset{
+	background-color:#ADD8E6;
+	text-align:center;
+	color:red;
+	text-shadow:2px 1px #DAA520;
+	margin-left:13%;
+	height:45px;
+	width:300px;
+	
+	font-family:Impact, Charcoal, sans-serif;
+	font-variant:small-caps;
+	
+	border-width:5px;  
+    border-style:outset;
+	border-color:red;
+	
+	outline-style:ridge;
+	outline-color:lightpink;
+	outline-width:4px;
+	outline-offset:4px;
+}
+#par1{
+	color:green;
+	text-decoration:underline;
+	margin-left:200px;
+	margin-bottom:35px;
+	font-weight: bold;
+}
+.txt{
+	border-top:5px dotted red;
+	border-left:5px solid green;
+	border-bottom:5px dotted red;
+	border-right:5px solid green;
+	margin-right:280px;
+	border-radius:20px;
+	font-family:verdana, sans serif;
+	font-size:1em;
+	outline:5px;
+	padding:20px;
+}
+#par2{
+	color:purple;
+	text-decoration:overline;
+	margin-left:265px;
+	font-style:oblique;
+	word-spacing:5px;
+}
+.uno{
+	vertical-align:middle;
+	width:25%;
+	height:auto;
+}
+.enl1{
+	color:red;
+	background-color:LightSalmon;
+}
+.enl1:link{
+	color:red;
+	background-color:LightSalmon;
+}
+.enl1:visited{
+	color:green;
+	background-color:GreenYellow;
+}
+.enl1:hover{
+	color:hotpink;
+	background-color:khaki;
+}
+.enl1:active{
+	color:blue;
+	background-color:Aquamarine;
+}
+.enl2{
+	border:solid 1px DarkSlateBlue;
+	color:DarkSlateBlue;
+	padding:10px 10px;
+	background-color:white;
+}
+.enl2:hover{
+	background-color:DarkSlateBlue;
+	color:white;
+}

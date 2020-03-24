@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Autor: Elena de Antón -->
+<!-- Fecha de entrega: 28 de Ocutbre -->
+<!-- Número de practica: 05 -->
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Trabajando con Formularios</title>
+	</head>
+	
+	<body>
+		<form action="#" method="get">
+<!--cada fieldset es un cuadro del formulario-->
+			<fieldset>
+				<legend>Datos de tu grupo musical</legend>
+
+				<p>
+					<label for="LblNombre">Nombre del grupo</label>
+					<input type="text" name="nombre" id="LblNombre">
+				</p>
+				<p>
+					<label for="LblGenero">Género Musical
+						<select name="Genero" id="LblGenero" size="3">
+							<option value="Rock">Rock</option>
+							<option value="Indie">Indie</option>
+							<option value="Jazz">Jazz</option>
+							<option value="Pop">Pop</option>
+							<option value="Blues">Blues</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label for="LblOtro">Otro</label>
+					<input type="text" name="Otro" id="LblOtro">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Tamaño del grupo</legend>
+				<p>
+<!--type="radio" siempre tiene el mismo name=""-->
+					<label for="LblPareja">
+						<input type="radio" name="tamano" id="LblPareja" value="P">Pareja
+					</label>
+					<label for="LblTrio">
+						<input type="radio" name="trio" id="LblTrio" value="T">Trio
+					</label>
+					<label for="LblCuarteto">
+						<input type="radio" name="tammano" id="LblCuarteto" value="C">Cuarteto
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Otros datos</legend>
+				<p>
+<!--type="checkbox" cada input tiene un name="" distinto-->
+					<label for="LblInstrumentos">
+						<input type="checkbox" name="instrumentos" value="si" id="LblIntrumentos">Instrumentos
+					</label>
+				</p>
+				<p>
+					<label for="LblVoz">
+						<input type="checkbox" name="voz" value="si" id="LblVoz">Voz
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Fecha del ultimo concierto</legend>
+				<p>
+					<label for="LblFecha">Fecha del ultimo concierto
+						<input type="date" name="fecha" min="1980-01-01" id="LblFecha">
+					</label>
+				</p>
+				<p>
+					<label for="LblHora">Hora del ultimo concierto
+						<input type="time" name="hora" id="LblHora">
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Volumen de audiencia</legend>
+				<p>
+					<label for="LblComportamiento">Comportamiento 1
+						<input type="range" min="1" max="10" value="5" step="1" id="LblComportamiento">10
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Otros datos de interes</legend>
+				<p>
+					<label for="LblInteres">Otros datos de interes: <br>
+<!-- el numero de rows(filas) y cols(columnas) es ancho y algo por numero de caracteres -->
+						<textarea name="Interes" rows="5" cols="50" id="LblInteres">Escribe texto</textarea>
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Datos de contacto</legend>
+				<p>
+					<label for="LblTelefono">Introduce tu teléfono:</label>
+						<input type="tel" name="telefono" id="LblTelefono" placeholder="000-000-000" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{3}" title="Un numero de telefono valido consiste en nueve digitos" placeholder="000 000 000" required>
+				</p>
+			</fieldset>
+			<br>
+			<fieldset>
+				<div>
+					<label>Presupuesto del ultimo concierto: </label>1
+					<input type="range" min="0" max="10" value="3" list="lista"/>10
+				</div>
+				<datalist id="lista">
+					<option value="0" label="0">
+					<option value="2" label="2">
+					<option value="4" label="4">
+					<option value="6" label="6">
+					<option value="8" label="8">
+					<option value="10" label="10">
+				</datalist>
+			</fieldset>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE mundo [
+	<!ELEMENT nomcontinente (#PCDATA)>
+	<!ELEMENT mundo (continente+)>
+	<!ELEMENT continente (nomcontinente, pais*)>
+	<!ELEMENT pais (#PCDATA)>
+	<!ATTLIST pais capital CDATA #REQUIRED>
+
+]>
+<mundo>
+	<continente>
+		<nomcontinente>Europa</nomcontinente>
+		<pais capital="Berlin">Alemania</pais>
+	</continente>
+	
+	<continente>
+		<nomcontinente>America</nomcontinente>
+		<pais capital="Buenos Aires">Argentina</pais>
+		<pais capital="Nassau">Bahamas</pais>
+	</continente>
+	
+	<continente>
+		<nomcontinente>Asia</nomcontinente>
+		<pais capital="Kabul">Afganistan</pais>
+		<pais capital="Riad">Arabia Saudita</pais>
+	</continente>
+	
+	<continente>
+		<nomcontinente>Africa</nomcontinente>
+	</continente>
+	
+</mundo>

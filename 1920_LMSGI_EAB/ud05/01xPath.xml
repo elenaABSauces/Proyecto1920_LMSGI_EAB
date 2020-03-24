@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edificio>
+    <vivienda>
+        <piso>1</piso>
+        <puerta>A</puerta>
+        <vecinos>
+            <nombre>David</nombre>
+            <nombre>Sara</nombre>
+        </vecinos>
+    </vivienda>
+    <vivienda>
+        <piso>1</piso>
+        <puerta>B</puerta>
+        <vecinos>
+            <nombre>Jaime</nombre>
+            <nombre>Luis</nombre>
+        </vecinos>
+    </vivienda>
+</edificio>
+
+<!--
+a. Escribe la ruta de acceso al elemento <nombre>. Usando referencia absoluta y relativas.
+b. Escribe la ruta de acceso que seleccione las viviendas que hay en el piso 1. Usando referencia absoluta y relativas.
+c. Escribe el nombre de los vecinos que viven en el Piso 1 y Puerta A.
+d. Escribe en qué piso vive Jaime
+e. Nombre de los vecinos de la primera vivienda
+f. Primer nombre de la primera vivienda
+g. Listar el nombre de los vecinos que comienza su nombre por la letra J
+h. Listar el nombre de los vecinos, cuyo nombre esta formado por más de 5 caracteres
+
+-->

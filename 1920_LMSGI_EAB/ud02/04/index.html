@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 04 Elena de Antón Barrio</title>
+		<style>
+			table{
+				table-layout:fixed;
+				width:100%;
+				color:white;
+				background-color:#EEEEEE;
+				font-family:arial;}
+			
+			th{
+				background-color:#428BCA;}
+			td{
+				text-align:center;}
+				
+			.alcalinos{ background-color:#F39C11;}
+			.lantanidos{ background-color:#AF47DB;}
+			.actinidos{ background-color:#BC8BD1;}
+			.halogenos{ background-color:#FCA99F;}
+			.alcalinoterreos{ background-color:#F1C40F;}
+			.bloque_p{ background-color:#2ECC71;}
+			.gases_nobles{ background-color:#3498DB;}
+			.transicion{ background-color:#16A085;}
+			.metaloides{ background-color:#DC7633;}
+			.no_metales{ background-color:#FE642E;}
+			
+			.solidos{ color:black;
+				font-weight:bold;}
+			.gaseosos{ color:#8A0808;
+				font-weight:bold;}
+			.liquidos{ color:#0000FF;
+				font-weight:bold;}
+			.desconocidos{ color:#585858;
+				font-weight:bold;}
+				
+			.num_atom{ text-align:left;}
+			.nombre{ font-style:italic;}
+			.peso{ font-size:small;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align: center; font-family:arial;">Tabla Periódica de los Elementos</h1>
+		</header>
+		<main>
+			<article>
+			<header>
+					<h2>Tabla Periódica</h2>
+				</header>
+			<table>
+				<thead>
+					<tr>
+						<th style="background-color:#FA58D0">P↓</th>
+						<th style="background-color:#FA58D0">G→</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+						<th>6</th>
+						<th>7</th>
+						<th>8</th>
+						<th>9</th>
+						<th>10</th>
+						<th>11</th>
+						<th>12</th>
+						<th>13</th>
+						<th>14</th>
+						<th>15</th>
+						<th>16</th>
+						<th>17</th>
+						<th>18</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="5"></td>
+						<td colspan="2" class="alcalinos">Metales<br>Alcalinos</td>
+						<td> </td>
+						<td class="lantanidos">Lantá-<br>nidos</td>
+						<td class="actinidos">Actí-<br>nidos</td>
+						<td colspan="2" class="halogenos">Elementos<br>Halógenos</td>
+						<td colspan="2"></td>
+						<td class="solidos" style="border:solid black 1px">C</td>
+						<td class="solidos" style="text-align:left">Sólidos</td>
+						<td class="gaseosos" style="border:solid black 1px">H</td>
+						<td class="gaseosos" colspan="3" style="text-align:left">Gaseosos</td>
+					</tr>
+					<tr>
+						<th>1</th>
+						<td></td>
+						<td class="no_metales">
+							<div class="num_atom">1</div>
+							<div class="gaseosos">H</div>
+							<div class="nombre">Hidrógeno</div>
+							<div class="peso">1.008</div>
+						<td colspan="2"></td>
+						<td colspan="2" class="alcalinoterreos">Metales<br>Alcalinotérraneos</td>
+						<td></td>
+						<td colspan="2" class="bloque_p"><br>Metales del bloque p</td>
+						<td colspan="2" class="gases_nobles"><br>Gases nobles</td>
+						<td colspan="2"></td>
+						<td class="liquidos" style="border:solid black 1px">Hg</td>
+						<td class="liquidos" style="text-align:left">Liquidos</td>
+						<td class="desconocidos" style="border:solid black 1px">Rf</td>
+						<td class="desconocidos" style="text-align:left">Desconocidos</td>
+						<td></td>
+						<td class="gases_nobles">
+							<div class="num_atom">2</div>
+							<div class="gaseosos">He</div>
+							<div class="nombre">Helio</div>
+							<div class="peso">4.0026</div>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td></td>
+						<td class="alcalinos">
+							<div class="num_atom">3</div>
+							<div class="solidos">Li</div>
+							<div class="nombre">Litio</div>
+							<div class="peso">6.94</div>
+						</td>
+						<td class="alcalinoterreos">
+							<div class="num_atom">4</div>
+							<div class="solidos">Be</div>
+							<div class="nombre">Berilio</div>
+							<div class="peso">9.0122</div>
+						</td>
+						<td></td>
+						<td colspan="2" class="transicion">Metales de<br>Transición</td>
+						<td></td>
+						<td colspan="2" class="metaloides">Elementos<br>Metaloides</td>
+						<td colspan="2" class="no_metales">Otros no<br>Metales</td>
+						<td colspan="2"></td>
+						<td class="metaloides">
+							<div class="num_atom">5</div>
+							<div class="solidos">B</div>
+							<div class="nombre">Boro</div>
+							<div class="peso">10.81</div>
+						</td>
+						<td class="no_metales">
+							<div class="num_atom">6</div>
+							<div class="solidos">C</div>
+							<div class="nombre">Carbono</div>
+							<div class="peso">12.011</div>
+						</td>
+						<td class="no_metales">
+							<div class="num_atom">7</div>
+							<div class="gaseosos">N</div>
+							<div class="nombre">Nitrógeno</div>
+							<div class="peso">14.007</div>
+						</td>
+						<td class="no_metales">
+							<div class="num_atom">8</div>
+							<div class="gaseosos">O</div>
+                            <div class="nombre">Oxígeno</div>
+							<div class="peso">15.999</div>
+						</td>
+						<td class="halogenos">
+							<div class="num_atom">9</div>
+							<div class="gaseosos">F</div>
+							<div class="nombre">Flúor</div>
+							<div class="peso">18.998</div>
+						</td>
+						<td class="gases_nobles">
+							<div class="num_atom">10</div>
+							<div class="gaseosos">Ne</div>
+							<div class="nombre">Neón</div>
+							<div class="peso">20.180</div>
+						</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td></td>
+						<td class="alcalinos">
+							<div class="num_atom">11</div>
+							<div class="solidos">Na</div>
+							<div class="nombre">Sodio</div>
+							<div class="peso">22.990</div>
+						</td>
+						<td class="alcalinoterreos">
+							<div class="num_atom">12</div>
+							<div class="solidos">Mg</div>
+							<div class="nombre">Magnesio</div>
+							<div class="peso">24.305</div>
+						</td>
+						<td colspan="10"></td>
+							<td class="bloque_p">
+							<div class="num_atom">13</div>
+							<div class="solidos">Al</div>
+								<div class="nombre">Aluminio</div>
+								<div class="peso">26.982</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">14</div>
+								<div class="solidos">Si</div>
+								<div class="nombre">Silicio</div>
+								<div class="peso">28.085</div>
+							</td>
+							<td class="no_metales">
+								<div class="num_atom">15</div>
+								<div class="solidos">P</div>
+								<div class="nombre">Fósforo</div>
+								<div class="peso">30.974</div>
+							</td>
+							<td class="no_metales">
+								<div class="num_atom">16</div>
+								<div class="solidos">S</div>
+								<div class="nombre">Azufre</div>
+								<div class="peso">32.06</div>
+							</td>
+							<td class="halogenos">
+								<div class="num_atom">17</div>
+								<div class="gaseosos">Cl</div>
+								<div class="nombre">Cloro</div>
+								<div class="peso">35.45</div>
+							</td>
+							<td class="gases_nobles">
+								<div class="num_atom">18</div>
+								<div class="gaseosos">Ar</div>
+								<div class="nombre">Argón</div>
+								<div class="peso">39.948</div>
+							</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td></td>
+							<td class="alcalinos">
+								<div class="num_atom">19</div>
+								<div class="solidos">K</div>
+								<div class="nombre">Potasio</div>
+								<div class="peso">39.098</div>
+							</td>
+							<td class="alcalinoterreos">
+								<div class="num_atom">20</div>
+								<div class="solidos">Ca</div>
+								<div class="nombre">Calcio</div>
+								<div class="peso">40.078</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">21</div>
+								<div class="solidos">Sc</div>
+								<div class="nombre">Escandio</div>
+								<div class="peso">44.956</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">22</div>
+								<div class="solidos">Ti</div>
+								<div class="nombre">Titanio</div>
+								<div class="peso">47.867</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">23</div>
+								<div class="solidos">V</div>
+								<div class="nombre">Vanadio</div>
+								<div class="peso">50.942</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">24</div>
+								<div class="solidos">Cr</div>
+								<div class="nombre">Cromo</div>
+								<div class="peso">51.996</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">25</div>
+								<div class="solidos">Mn</div>
+								<div class="nombre">Manganeso</div>
+								<div class="peso">54.938</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">26</div>
+								<div class="solidos">Fe</div>
+								<div class="nombre">Hierro</div>
+								<div class="peso">55.845</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">27</div>
+								<div class="solidos">Co</div>
+								<div class="nombre">Cobalto</div>
+								<div class="peso">58.933</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">28</div>
+								<div class="solidos">Ni</div>
+								<div class="nombre">Níquel</div>
+								<div class="peso">58.693</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">29</div>
+								<div class="solidos">Cu</div>
+								<div class="nombre">Cobre</div>
+								<div class="peso">63.546</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">30</div>
+								<div class="solidos">Zn</div>
+								<div class="nombre">Cinc</div>
+								<div class="peso">65.38</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">31</div>
+								<div class="solidos">Ga</div>
+								<div class="nombre">Galio</div>
+								<div class="peso">69.723</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">32</div>
+								<div class="solidos">Ge</div>
+								<div class="nombre">Germanio</div>
+								<div class="peso">72.63</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">33</div>
+								<div class="solidos">As</div>
+								<div class="nombre">Arsénico</div>
+								<div class="peso">74.922</div>
+							</td>
+							<td class="no_metales">
+								<div class="num_atom">34</div>
+								<div class="solidos">Se</div>
+								<div class="nombre">Selenio</div>
+								<div class="peso">78.96</div>
+							</td>
+							<td class="halogenos">
+								<div class="num_atom">35</div>
+								<div class="liquidos">Br</div>
+								<div class="nombre">Bromo</div>
+								<div class="peso">79.904</div>
+							</td>
+							<td class="gases_nobles">
+								<div class="num_atom">36</div>
+								<div class="gaseosos">Kr</div>
+								<div class="nombre">Kriptón</div>
+								<div class="peso">83.798</div>
+							</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td></td>
+							<td class="alcalinos">
+								<div class="num_atom">37</div>
+								<div class="solidos">Rb</div>
+								<div class="nombre">Rubidio</div>
+								<div class="peso">85.468</div>
+							</td>
+							<td class="alcalinoterreos">
+								<div class="num_atom">38</div>
+								<div class="solidos">Sr</div>
+								<div class="nombre">Estroncio</div>
+								<div class="peso">87.62</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">39</div>
+								<div class="solidos">Y</div>
+								<div class="nombre">Itrio</div>
+								<div class="peso">88.906</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">40</div>
+								<div class="solidos">Zr</div>
+								<div class="nombre">Circonio</div>
+								<div class="peso">91.224</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">41</div>
+								<div class="solidos">Nb</div>
+								<div class="nombre">Niobio</div>
+								<div class="peso">92.906</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">42</div>
+								<div class="solidos">Mo</div>
+								<div class="nombre">Molibdeno</div>
+								<div class="peso">95.96</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">43</div>
+								<div class="solidos">Tc</div>
+								<div class="nombre">Tecnecio</div>
+								<div class="peso">97.91</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">44</div>
+								<div class="solidos">Ru</div>
+								<div class="nombre">Rutenio</div>
+								<div class="peso">101.07</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">45</div>
+								<div class="solidos">Rh</div>
+								<div class="nombre">Rodio</div>
+								<div class="peso">102.91</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">46</div>
+								<div class="solidos">Pd</div>
+								<div class="nombre">Paladio</div>
+								<div class="peso">106.42</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">47</div>
+								<div class="solidos">Ag</div>
+								<div class="nombre">Plata</div>
+								<div class="peso">107.87</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">48</div>
+								<div class="solidos">Cd</div>
+								<div class="nombre">Cadmio</div>
+								<div class="peso">112.41</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">49</div>
+								<div class="solidos">In</div>
+								<div class="nombre">Indio</div>
+								<div class="peso">114.82</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">50</div>
+								<div class="solidos">Sn</div>
+								<div class="nombre">Estaño</div>
+								<div class="peso">118.71</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">51</div>
+								<div class="solidos">Sb</div>
+								<div class="nombre">Antimonio</div>
+								<div class="peso">121.76</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">52</div>
+								<div class="solidos">Te</div>
+								<div class="nombre">Telurio</div>
+								<div class="peso">127.60</div>
+							</td>
+							<td class="halogenos">
+								<div class="num_atom">53</div>
+								<div class="solidos">I</div>
+								<div class="nombre">Yodo</div>
+								<div class="peso">126.90</div>
+							</td>
+							<td class="gases_nobles">
+								<div class="num_atom">54</div>
+								<div class="gaseosos">Xe</div>
+								<div class="nombre">Xenón</div>
+								<div class="peso">131.29</div>
+							</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td></td>
+							<td class="alcalinos">
+								<div class="num_atom">55</div>
+								<div class="solidos">Cs</div>
+								<div class="nombre">Cesio</div>
+								<div class="peso">132.91</div>
+							</td>
+							<td class="alcalinoterreos">
+								<div class="num_atom">56</div>
+								<div class="solidos">Ba</div>
+								<div class="nombre">Bario</div>
+								<div class="peso">137.33</div>
+							</td>
+							<td rowspan="5" style="background-color:#F1CBE7"></td>
+							<td class="transicion">
+								<div class="num_atom">72</div>
+								<div class="solidos">Hf</div>
+								<div class="nombre">Hafnio</div>
+								<div class="peso">178.49</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">73</div>
+								<div class="solidos">Ta</div>
+								<div class="nombre">Tantalio</div>
+								<div class="peso">180.95</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">74</div>
+								<div class="solidos">W</div>
+								<div class="nombre">Wolframio</div>
+								<div class="peso">183.84</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">75</div>
+								<div class="solidos">Re</div>
+								<div class="nombre">Renio</div>
+								<div class="peso">186.21</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">76</div>
+								<div class="solidos">Os</div>
+								<div class="nombre">Osmio</div>
+								<div class="peso">190.23</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">77</div>
+								<div class="solidos">Ir</div>
+								<div class="nombre">Iridio</div>
+								<div class="peso">192.22</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">78</div>
+								<div class="solidos">Pt</div>
+								<div class="nombre">Platino</div>
+								<div class="peso">195.05</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">79</div>
+								<div class="solidos">Au</div>
+								<div class="nombre">Oro</div>
+								<div class="peso">196.97</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">80</div>
+								<div class="liquidos">Hg</div>
+								<div class="nombre">Mercurio</div>
+								<div class="peso">200.59</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">81</div>
+								<div class="solidos">Tl</div>
+								<div class="nombre">Talio</div>
+								<div class="peso">204.38</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">82</div>
+								<div class="solidos">Pb</div>
+								<div class="nombre">Plomo</div>
+								<div class="peso">207.2</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">83</div>
+								<div class="solidos">Bi</div>
+								<div class="nombre">Bismuto</div>
+								<div class="peso">208.98</div>
+							</td>
+							<td class="metaloides">
+								<div class="num_atom">84</div>
+								<div class="solidos">Po</div>
+								<div class="nombre">Polonio</div>
+								<div class="peso">208.98</div>
+							</td>
+							<td class="halogenos">
+								<div class="num_atom">85</div>
+								<div class="solidos">At</div>
+								<div class="nombre">Astato</div>
+								<div class="peso">209.99</div>
+							</td>
+							<td class="gases_nobles">
+								<div class="num_atom">86</div>
+								<div class="gaseosos">Rn</div>
+								<div class="nombre">Radón</div>
+								<div class="peso">22.02</div>
+							</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td></td>
+							<td class="alcalinos">
+								<div class="num_atom">87</div>
+								<div class="solidos">Fr</div>
+								<div class="nombre">Francio</div>
+								<div class="peso">223.02</div>
+							</td>
+							<td class="alcalinoterreos">
+								<div class="num_atom">88</div>
+								<div class="solidos">Ra</div>
+								<div class="nombre">Radio</div>
+								<div class="peso">226.03</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">104</div>
+								<div class="desconocidos">Rf</div>
+								<div class="nombre">Rutherfordio</div>
+								<div class="peso">261</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">105</div>
+								<div class="desconocidos">Db</div>
+								<div class="nombre">Dubnio</div>
+								<div class="peso">262</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">106</div>
+								<div class="desconocidos">Sg</div>
+								<div class="nombre">Seaborgio</div>
+								<div class="peso">269</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">107</div>
+								<div class="desconocidos">Bh</div>
+								<div class="nombre">Bohrio</div>
+								<div class="peso">264</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">108</div>
+								<div class="desconocidos">Hs</div>
+								<div class="nombre">Hassio</div>
+								<div class="peso">269</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">109</div>
+								<div class="desconocidos">Mt</div>
+								<div class="nombre">Meitnerio</div>
+								<div class="peso">268</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">110</div>
+								<div class="desconocidos">Ds</div>
+								<div class="nombre">Darmstadio</div>
+								<div class="peso">281</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">111</div>
+								<div class="desconocidos">Rg</div>
+								<div class="nombre">Roentgenio</div>
+								<div class="peso">281</div>
+							</td>
+							<td class="transicion">
+								<div class="num_atom">112</div>
+								<div class="desconocidos">Cn</div>
+								<div class="nombre">Copernicio</div>
+								<div class="peso">285</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">113</div>
+								<div class="solidos">Nh</div>
+								<div class="nombre">Nihonio</div>
+								<div class="peso">286</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">114</div>
+								<div class="solidos">Fl</div>
+								<div class="nombre">Flerovio</div>
+								<div class="peso">289</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">115</div>
+								<div class="solidos">Mc</div>
+								<div class="nombre">Moscovio</div>
+								<div class="peso">288</div>
+							</td>
+							<td class="bloque_p">
+								<div class="num_atom">116</div>
+								<div class="solidos">Lv</div>
+								<div class="nombre">Livermorio</div>
+								<div class="peso">292</div>
+							</td>
+							<td class="halogenos">
+								<div class="num_atom">117</div>
+								<div class="solidos">Ts</div>
+								<div class="nombre">Teneso</div>
+								<div class="peso">293</div>
+							</td>
+							<td class="gases_nobles">
+								<div class="num_atom">118</div>
+								<div class="gaseosos">Og</div>
+								<div class="nombre">Oganesón</div>
+								<div class="peso">22.02</div>
+							</td>
+						</tr>
+						<tr>
+						    <td colspan="4">&nbsp;</td>
+							<td colspan="15">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="4"></td>
+							<td class="lantanidos">
+								<div class="num_atom">57</div>
+								<div class="solidos">La</div>
+								<div class="nombre">Lantano</div>
+								<div class="peso">138.91</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">58</div>
+								<div class="solidos">Ce</div>
+								<div class="nombre">Cerio</div>
+								<div class="peso">140.12</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">59</div>
+								<div class="solidos">Pr</div>
+								<div class="nombre">Praseodimio</div>
+								<div class="peso">140.91</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">60</div>
+								<div class="solidos">Nd</div>
+								<div class="nombre">Neodimio</div>
+								<div class="peso">144.24</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">61</div>
+								<div class="solidos">Pm</div>
+								<div class="nombre">Prometio</div>
+								<div class="peso">144.91</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">62</div>
+								<div class="solidos">Sm</div>
+								<div class="nombre">Samario</div>
+								<div class="peso">150.36</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">63</div>
+								<div class="solidos">Eu</div>
+								<div class="nombre">Europio</div>
+								<div class="peso">151.96</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">64</div>
+								<div class="solidos">Gd</div>
+								<div class="nombre">Gadolinio</div>
+								<div class="peso">157.25</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">65</div>
+								<div class="solidos">Tb</div>
+								<div class="nombre">Terbio</div>
+								<div class="peso">158.93</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">66</div>
+								<div class="solidos">Dy</div>
+								<div class="nombre">Disprosio</div>
+								<div class="peso">162.50</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">67</div>
+								<div class="solidos">Ho</div>
+								<div class="nombre">Holmio</div>
+								<div class="peso">164.93</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">68</div>
+								<div class="solidos">Er</div>
+								<div class="nombre">Erbio</div>
+								<div class="peso">167.26</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">69</div>
+								<div class="solidos">Tm</div>
+								<div class="nombre">Tulio</div>
+								<div class="peso">168.93</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">70</div>
+								<div class="solidos">Yb</div>
+								<div class="nombre">Iterbio</div>
+								<div class="peso">173.05</div>
+							</td>
+							<td class="lantanidos">
+								<div class="num_atom">71</div>
+								<div class="solidos">Lu</div>
+								<div class="nombre">Lutecio</div>
+								<div class="peso">174.97</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4"></td>
+							<td class="actinidos">
+								<div class="num_atom">89</div>
+								<div class="solidos">Ac</div>
+								<div class="nombre">Actinio</div>
+								<div class="peso">227.03</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">90</div>
+								<div class="solidos">Th</div>
+								<div class="nombre">Torio</div>
+								<div class="peso">232.04</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">91</div>
+								<div class="solidos">Pa</div>
+								<div class="nombre">Proctanio</div>
+								<div class="peso">231.04</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">92</div>
+								<div class="solidos">U</div>
+								<div class="nombre">Uranio</div>
+								<div class="peso">238.03</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">93</div>
+								<div class="solidos">Np</div>
+								<div class="nombre">Neptonio</div>
+								<div class="peso">237.05</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">94</div>
+								<div class="solidos">Pu</div>
+								<div class="nombre">Plutonio</div>
+								<div class="peso">244.06</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">95</div>
+								<div class="solidos">Am</div>
+								<div class="nombre">Americo</div>
+								<div class="peso">243.06</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">96</div>
+								<div class="solidos">Cm</div>
+								<div class="nombre">Curio</div>
+								<div class="peso">247.07</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">97</div>
+								<div class="solidos">Bk</div>
+								<div class="nombre">Berkelio</div>
+								<div class="peso">247.07</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">98</div>
+								<div class="solidos">Cf</div>
+								<div class="nombre">Californio</div>
+								<div class="peso">251.08</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">99</div>
+								<div class="solidos">Es</div>
+								<div class="nombre">Einstenio</div>
+								<div class="peso">252.08</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">100</div>
+								<div class="solidos">Fm</div>
+								<div class="nombre">Fermio</div>
+								<div class="peso">257.10</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">101</div>
+								<div class="solidos">Md</div>
+								<div class="nombre">Mendelevio</div>
+								<div class="peso">258.10</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">102</div>
+								<div class="solidos">No</div>
+								<div class="nombre">Nobelio</div>
+								<div class="peso">259.10</div>
+							</td>
+							<td class="actinidos">
+								<div class="num_atom">103</div>
+								<div class="solidos">Lr</div>
+								<div class="nombre">Laurencio</div>
+								<div class="peso">262.11</div>
+							</td>
+						</tr>
+				</tbody>
+			</table>
+			</article>
+		</main>
+		<footer>
+		<p> 2019-20 IES LOS SAUCES.©Todos los Derechos Reservados. <b>Elena de Antón Barrio</b></p>
+		</footer>
+	
+	</body>
+</html>
+	

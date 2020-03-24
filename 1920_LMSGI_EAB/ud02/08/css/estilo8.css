@@ -1,0 +1,11 @@
+/* 
+    Created on : Notepad ++
+    Author     : Elena de Antón Barrio
+    File        : estilo8.css
+    Description : Trabajando con selectores
+*/
+
+#abuelo > div {border-color: red;}
+
+
+

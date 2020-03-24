@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+ Autor.- Elena de Antón
+ Fecha.- 25/11/19
+ Ejercicio.- UD2_010
+ Documento.- index.html
+-->
+<html>
+    <head>
+        <title>CSS 03 Elena de Antón Barrio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elena de Antón Barrio">
+        <meta name="application-name" content="CSS 03">
+		<meta name="description" content="Trabajando con bordes y fondos">
+        <meta name="robots" content="index, follow"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" title="Default style">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="el">
+                <p>
+                    My background origin has the default <code>padding-box</code> value. The background's position origin is at the padding box's top left corner.
+                </p>
+            </div>
+            <div class="el origin-border-box">
+                <p>
+                    My background origin has the value <code>border-box</code>. The background's position origin is at the border box's top left corner.
+                </p>
+            </div>
+            <div class="el origin-content-box">
+                <p>
+                    My background origin has the value <code>content-box</code>. The background's position origin is at the content box's top left corner.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

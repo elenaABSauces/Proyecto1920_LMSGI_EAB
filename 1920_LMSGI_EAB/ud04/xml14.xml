@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE catalogo [
+<!--Elementos-->
+	<!ELEMENT catalogo (portatil*)>
+	<!ELEMENT portatil (referencia, nombre, fabricante, procesador, ram, disco, pantalla, grafica, fotos)>
+	<!ELEMENT referencia (#PCDATA)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT fabricante (#PCDATA)>
+	<!ELEMENT procesador (nombreP, cache, numPro, velocidad)>
+	<!ELEMENT nombreP (#PCDATA)>
+	<!ELEMENT cache (#PCDATA)>
+	<!ELEMENT numPro (#PCDATA)>
+	<!ELEMENT velocidad (#PCDATA)>
+	<!ELEMENT ram (memoria, tipo)>
+	<!ELEMENT memoria (#PCDATA)>
+	<!ELEMENT tipo (#PCDATA)>
+	<!ELEMENT disco (#PCDATA)>
+	<!ELEMENT pantalla (dimension, resolucion, rMax)>
+	<!ELEMENT dimension (#PCDATA)>
+	<!ELEMENT resolucion (#PCDATA)>
+	<!ELEMENT resolucionMax (#PCDATA)>
+	<!ELEMENT grafica (#PCDATA)>
+	<!ELEMENT fotos (image*)>
+	<!ELEMENT image (#PCDATA)>
+<!--Atributos-->
+	<!ATTLIST referencia id ID #REQUIRED>
+	<!ATTLIST fabricante nombre CDATA #REQUIRED>
+	<!ATTLIST cache tamanyo CDATA #REQUIRED>
+	<!ATTLIST velocidad media CDATA #REQUIRED>
+	<!ATTLIST memoria udMedida CDATA #REQUIRED>
+	<!ATTLIST image type (imagepng|imagejpg|imageico) #REQUIRED>
+	<!ATTLIST disco tam CDATA #REQUIRED>
+	<!ATTLIST ram tipo (DDR3|DDR4) #REQUIRED>
+	<!ATTLIST disco tipoDisco (SSD|HD) #REQUIRED>
+]>
+
+<catalogo>
+	<portatil>
+		<referencia id="HP10219"></referencia>
+		<nombre>SuperOrdenador</nombre>
+		<fabricante nombre="HP"/>
+		<procesador>
+			<nombreP>CORE I3-7020U</nombreP>
+			<cache tamanyo="GB">4</cache>
+			<numPro>2</numPro>
+			<velocidad media="Ghz">2.1</velocidad>
+		</procesador>
+		<ram tipo="DDR3">
+			<memoria udMedida="Gb">8</memoria>
+			<tipo>DDR4</tipo>
+		</ram>
+		<disco tam="Gb" tipoDisco="SSD">256</disco>
+		<pantalla>
+			<dimension>23 pulgadas</dimension>
+			<resolucion>1266x768</resolucion>
+			<rMax>1366x768</rMax>
+		</pantalla>
+		<grafica>UHD Graphics 875</grafica>
+		<fotos>
+			<image type="imagepng">foto1.png</image>
+		</fotos>
+	</portatil>
+	<portatil>
+		<referencia id="Ap145"></referencia>
+		<nombre>MegaOrdenador</nombre>
+		<fabricante nombre="Apple"/>
+		<procesador>
+			<nombreP>CORE I3-8145U</nombreP>
+			<cache tamanyo="GB">4</cache>
+			<numPro>2</numPro>
+			<velocidad media="Ghz">2.1</velocidad>
+		</procesador>
+		<ram tipo="DDR4">
+			<memoria udMedida="Gb">8</memoria>
+			<tipo>DDR4</tipo>
+		</ram>
+		<disco tam="Gb" tipoDisco="SSD">256</disco>
+		<pantalla>
+			<dimension>23 pulgadas</dimension>
+			<resolucion>1266x768</resolucion>
+			<rMax>1366x768</rMax>
+		</pantalla>
+		<grafica>UHD Graphics 875</grafica>
+		<fotos>
+			<image type="imagepng">foto1.png</image>
+		</fotos>
+	</portatil>
+</catalogo>

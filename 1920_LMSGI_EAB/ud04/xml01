@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
  <!DOCTYPE mail [  
-	<!ELEMENT remitente (#PCDATA)> 
-	<!ELEMENT asunto (#PCDATA)> 
+	<!-- <!ELEMENT remitente (#PCDATA)> 
+	<!-- <!ELEMENT asunto (#PCDATA)> 
 	<!ELEMENT fecha (#PCDATA)> 
 	<!ELEMENT correo (#PCDATA)> 
 	<!ELEMENT mensaje (#PCDATA)> 
@@ -16,12 +15,12 @@
 	<!ELEMENT mail (remitente?,asunto?,fecha?,destinatarios?,mensaje?,adjuntar?)>  
 ]>  
 <mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SchemaXML01.xsd">
-	<remitente>micorreo@gmail.es</remitente>
+	<remitente>micorreo@correo.es</remitente>
 	<asunto>Enviar un mensaje</asunto>
-	<fecha>2020-01-20</fecha>
+	<fecha>2020-01-14</fecha>
 	<destinatarios>
-		<correo>sucorreo@gmail.es</correo>
-		<correo>otrocorreo@gmail.es</correo>
+		<correo>sucorreo@correo.es</correo>
+		<correo>otrocorreo@correo.es</correo>
 	</destinatarios>
 	<mensaje>Solo tengo que enviarte un mensaje</mensaje>
 	<adjuntar>

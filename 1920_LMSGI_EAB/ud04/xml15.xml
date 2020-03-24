@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banda tipo="rock" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation= "model.xsd">
+	
+		<nombre>Metallica</nombre>
+		<integrantes>4</integrantes>
+		<origen>1983-05-06</origen>
+		<activo>true</activo>
+	
+ </banda>

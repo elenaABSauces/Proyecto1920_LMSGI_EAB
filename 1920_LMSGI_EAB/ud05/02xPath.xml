@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<listatickets>
+    <ticket>
+        <numero>7483</numero>
+        <fecha>2012-01-20</fecha>
+        <hora>22:00:00</hora>
+        <producto>
+            <nombre>Agua</nombre>
+            <precio>0.60</precio>
+        </producto>
+        <producto>
+            <nombre>Refresco</nombre>
+            <precio>1.00</precio>
+        </producto>
+        <total>1.60</total>
+    </ticket>
+    <ticket>
+        <numero>7484</numero>
+        <fecha>2012-01-21</fecha>
+        <hora>22:05:00</hora>
+        <producto>
+            <nombre>Refresco</nombre>
+            <precio>1.00</precio>
+        </producto>
+        <producto>
+            <nombre>Refresco</nombre>
+            <precio>1.00</precio>
+        </producto>
+        <total>2.00</total>
+    </ticket>
+</listatickets>
+
+<!--
+a. Escribe la ruta absoluta para llegar al último elemento <total>.
+b. Escribe la ruta para llegar a todos los elementos que contiene el nodo <producto> .
+c. ¿Cómo utilizarías la función sum de XPath para obtener el importe total de todos los tickets y saber cuánto hemos ganado?
+d. Escribe la ruta para mostrar el número y total de cada ticket.
+
+-->

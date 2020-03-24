@@ -1,0 +1,103 @@
+
+/* 
+    Created on : 06-dic-2019
+    Author     : Elena de Antón Barrio
+    Colores utilizados: https://www.w3schools.com/colors/colors_groups.asp
+*/
+header{
+	color:darkred;
+	text-decoration:underline;
+	font-weight: bold;
+	font-variant:small-caps;
+}
+body{
+	background-image:url(../images/Le_petit_prince.png);
+	background-size:275px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:top right;
+	font-family:calibri, arial, sans-serif;
+}
+p{
+	color:black;
+	background-color:Crimson;
+	font-style:oblique;
+	padding-top:4px;
+	padding-bottom:2px;
+}
+p:first-letter{
+	font-size:1.3em;
+}
+span{
+	color:white;
+	font-weight:bold;
+}
+main{
+	margin-right:250px;
+}
+.lista1{
+	list-style:circle;
+	margin-left:15px;
+	font-size:1.2em;
+}
+.lista2{
+	list-style:square;
+	font-size:1.2em;
+}
+.lista3{
+	list-style-image:url(../images/sqpurple.png);
+	font-size:1.2em;
+	margin-left:15px;
+}
+.lista4{
+	background-color:lightsalmon;
+	border-style:dashed;
+	border-color:darkred;
+}
+.lista4>li{
+	margin:5px;
+	padding:5px;
+    background-color:darkred;
+	color:lightsalmon;
+	margin-left: -1.5em;
+	margin-right: 1em;
+
+}
+.lista4 li:nth-child(-n+1){
+	margin-top: 1em;
+}
+.lista4 li:nth-child(+n+3){
+	margin-bottom: 1em;
+}
+ol li::before {
+	content: "•"; 
+	color: darkred;
+	display: inline-block; width: 1em;
+	margin-left: -1em}
+.lista5{
+	background-color:lightsalmon;
+	border-left:darkred 10px solid;
+	list-style:none;
+	color: darkred;
+	padding:5px;
+	counter-reset:ol;
+}
+.lista6{
+	color:darkred;
+	list-style:none;
+}
+.lista6>li{
+	margin-left:-2.5em;
+	border-top:1px darkred dotted;
+	border-bottom:1px #DDD solid;
+	border-left:1px #DDD solid;
+	padding:5px;
+}
+.lista6>li+li{
+	border-bottom:1px darkred dotted;
+	border-left:2px darkred dotted;
+	border-top:none;
+}
+hr{
+	color:#DDD;
+}

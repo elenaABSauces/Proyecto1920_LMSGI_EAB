@@ -1,0 +1,9 @@
+/* 
+    Created on  : Notepad ++
+    Author      : Elena de Antón Barrio
+    File        : reset.css
+    Description : Resetear los estilos
+*/
+#abuelo::before {content:"estilo por defecto"}
+
+

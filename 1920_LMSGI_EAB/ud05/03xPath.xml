@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<peliculas>
+    <pelicula>
+        <nombre>La invenci&#243;n de Hugo</nombre>
+        <valoracion puntos="5"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>La piel que habito</nombre>
+        <valoracion puntos="3"/>
+        <publico>Adultos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Los descencientes</nombre>
+        <valoracion puntos="4"/>
+        <publico>Mayores de 12</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Como entrenar a tu dragón</nombre>
+        <valoracion puntos="4"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Salvar al soldado Ryan</nombre>
+        <valoracion puntos="3"/>
+        <publico>Adultos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Bienvenidos al norte</nombre>
+        <valoracion puntos="5"/>
+        <publico>Todos los p&#250;blicos</publico>
+    </pelicula>
+    <pelicula>
+        <nombre>Lucia y el sexo</nombre>
+        <valoracion puntos="2"/>
+        <publico>Adultos</publico>
+    </pelicula>
+</peliculas>
+
+<!--
+a. Escribe la ruta XPath que seleccione las películas (nombre de la pelicula) cuya valoración sea de 4 o más puntos.
+b. Seleccione el nombre de las películas de 3 o más puntos y de adultos
+c. Total de películas
+d. Selecciona el nombre de las películas que tienen los mismos puntos que la película “La piel que habito”
+e. Mostrar el nombre de la pelicula (texto), puntos y a quien esta dirigida (texto).
+-->
