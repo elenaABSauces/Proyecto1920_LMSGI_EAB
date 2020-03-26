@@ -265,13 +265,22 @@
 22.Nombre de las asignaturas que estudia Luisa
 /universidad/asignaturas/asignatura[@id=//alumno[nombre='Luisa']//asignatura/@codigo]/nombre
 
-23.Primer apellido de los alumnos matriculados en Ingeniería del Software:
-24.Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología
-de los Alimentos:
-25.Nombre de los alumnos matriculados en carreras que no tienen subdirector:
-26.Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien
-la carrera de I.T. Informática :
-27.Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002: 
+23.Primer apellido de los alumnos matriculados en Ingeniería del Software
+/universidad/alumnos/alumno[.//@codigo=/universidad/asignaturas/asignatura[nombre="Ingeniería del Software"]/@id]/apellido1
 
+24.Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología
+de los Alimentos
+/universidad/carreras/carrera[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre="Tecnología de los Alimentos"]/@id]]//carrera/@codigo]/nombre
+
+25.Nombre de los alumnos matriculados en carreras que no tienen subdirector
+/universidad/alumnos/alumno[not(.//carrera/@codigo=//carrera[subdirector]/@codigo)]/nombre
+
+26.Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien
+la carrera de I.T. Informática 
+/universidad/alumnos/alumno[.//asignatura/@codigo=/universidad/asignaturas/asignatura[creditos_practicos=0]/@id]
+[/universidad/alumnos/alumno/estudios/carrera/@codigo=/universidad/carreras/carrera[nombre='I.T. Informática']/@id]/nombre
+
+27.Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002
+//alumno[.//carrera/@codigo=//carrera[not(plan>=2002)]/@id]/nombre
 
 -->

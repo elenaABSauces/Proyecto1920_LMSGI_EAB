@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+                <xs:element name="tiempo">
+                    <xs:complexType>
+                        <xs:attribute name="preparacion">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:maxInclusive value="999"/>
+                                    <xs:minInclusive value="1"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="coccion" type="xs:positiveInteger" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ingredientes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ingrediente" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="cantidad" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:positiveInteger">
+                                                        <xs:attribute name="unidad" use="optional">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="gramos"/>
+                                                                    <xs:enumeration value="mililitros"/>
+                                                                    <xs:enumeration value="pizca"/>
+                                                                    <xs:enumeration value="chorro"/>
+                                                                    <xs:enumeration value="cucharada"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="instrucciones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paso" type="xs:string" maxOccurs="10"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="plato">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="primero"/>
+                        <xs:enumeration value="segundo"/>
+                        <xs:enumeration value="postre"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
