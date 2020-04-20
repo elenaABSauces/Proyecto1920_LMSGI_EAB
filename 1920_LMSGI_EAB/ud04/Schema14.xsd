@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="catalogo">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="portatil" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="referencia" type="xs:string"/>
+						<xs:element name="nombre" type="xs:string"/>
+						<xs:element name="fabricante">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="nombre" type="xs:string"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="procesador">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nombre" type="xs:string"/>
+									<xs:element name="cache">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:integer">
+                                                                                                    <xs:attribute name="tamanyo" type="xs:string"/>
+												</xs:extension>	
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="numero" type="xs:integer"/>
+									<xs:element name="velocidad">
+                                                                            <xs:complexType>
+                                                                                <xs:simpleContent>
+                                                                                    <xs:extension base="xs:float">
+                                                                                        <xs:attribute name="medida" type="xs:string" default="Ghz"/>
+                                                                                    </xs:extension>
+                                                                                </xs:simpleContent>
+                                                                            </xs:complexType>
+                                                                        </xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="ram">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="memoria">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:integer">
+                                                                                                    <xs:attribute name="unidad" type="xs:string"/>
+												</xs:extension>	
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="tipo" type="xs:string"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="disco">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:integer">
+										<xs:attribute name="tipo" type="xs:string"/>
+										<xs:attribute name="medida" type="xs:string"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="pantalla">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="dimension" type="xs:string"/>
+									<xs:element name="resolucion" type="xs:string"/>
+									<xs:element name="maxresolucion" type="xs:string"/>
+								</xs:sequence>								
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="grafica" type="xs:string"/>
+						<xs:element name="foto" type="xs:string" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:element>
+</xs:schema>

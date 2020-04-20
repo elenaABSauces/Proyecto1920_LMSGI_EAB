@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="mail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="remitente" type="xs:string"/>
+				<xs:element name="asunto" type="xs:string" minOccurs="0"/>
+				<xs:element name="fecha" type="xs:date"/>
+				<xs:element name="destinatarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="correo" type="xs:string" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="mensaje" type="xs:string"/>
+				<xs:element name="adjuntar" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="image" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="tipo" type="xs:string"/>
+										<xs:element name="nombre" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>	 

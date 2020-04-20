@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="mail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="remitente" type="xs:string"/>
+				<xs:element name="asunto" type="xs:string" minOccurs="0"/>
+				<xs:element name="destinatarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="correo" type="xs:string" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="mensaje" type="xs:string"/>
+				<xs:element name="adjuntar" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="image" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="type">
+											<!-- para añadirle restriccion de posibles valores -->
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<!-- <xs:enumeration value="imagepng"/> -->
+														<!-- <xs:enumeration value="imagejpg"/> -->
+														<!-- <xs:enumeration value="imageico"/> -->
+														<xs:pattern value="imagepng|imagejpg|imageico"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+							<xs:attribute name="type" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+				<xs:attribute name="fecha" type="xs:date"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>	 

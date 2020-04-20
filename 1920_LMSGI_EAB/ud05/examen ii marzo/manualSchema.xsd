@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+Autor.- Elena de Anton
+Fecha.- Martes 31 de marzo de 2020
+Fichero.- manualSchema.xsd
+Requerimientos.- 
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="manual">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="subtitulo" type="xs:string" minOccurs="0"/>
+                <xs:element name="fecha_creacion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:date">
+                            <xs:minExclusive value="2020-01-01"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="sistema">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="version" type="xs:float"/>
+                                <xs:attribute name="tipo" type="xs:string"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="url" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="pagina"/>
+                            </xs:extension>
+                        </xs:simpleContent>    
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="paso" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="comando" type="xs:string"/>
+                            <xs:element name="descripcion" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="codigo">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]{3}[0-9]{2}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

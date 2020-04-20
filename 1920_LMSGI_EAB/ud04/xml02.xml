@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE mundo [
+	<!ELEMENT nomcontinente (#PCDATA)>
+	<!ELEMENT nompais (#PCDATA)>
+	<!ELEMENT nomcapital (#PCDATA)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT mundo (continente+)>
+	<!ELEMENT continente (nomcontinente, pais+)>
+	<!ELEMENT pais (nompais, nomcapital)>
+]>
+<mundo>
+	<continente>
+		<nomcontinente>Europa</nomcontinente>
+		<pais>
+			<nompais>Alemania</nompais>
+				<nomcapital>Berlin</nomcapital>
+		</pais>
+	</continente>
+	<continente>
+		<nomcontinente>America</nomcontinente>
+		<pais>
+			<nompais>Argentina</nompais>
+				<nomcapital>Buenos Aires</nomcapital>
+		</pais>
+		<pais>
+			<nompais>Bahamas</nompais>
+			<nomcapital>Nassau</nomcapital>
+		</pais>
+	</continente>
+	<continente>
+		<nomcontinente>Asia</nomcontinente>
+		<pais>
+			<nompais>Afganistan</nompais>
+			<nomcapital>Kabul</nomcapital>
+		</pais>
+		<pais>
+			<nompais>Arabia Saudita</nompais>
+			<nomcapital>Riad</nomcapital>
+		</pais>
+	</continente>
+</mundo>

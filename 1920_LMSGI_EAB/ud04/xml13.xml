@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE CATALOG [
+    <!ENTITY AUTHOR "John Doe">
+    <!ENTITY COMPANY "JD Power Tools, Inc.">
+    <!ENTITY EMAIL "jd@jd-tools.com">
+    <!ELEMENT CATALOG (PRODUCT+)>
+
+    <!ELEMENT PRODUCT
+    (SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+    <!ATTLIST PRODUCT
+    NAME CDATA #IMPLIED
+    CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+    PARTNUM CDATA #IMPLIED
+    PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+    INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+    <!ELEMENT SPECIFICATIONS (#PCDATA)>
+    <!ATTLIST SPECIFICATIONS
+    WEIGHT CDATA #IMPLIED
+    POWER CDATA #IMPLIED>
+
+    <!ELEMENT OPTIONS (#PCDATA)>
+    <!ATTLIST OPTIONS
+    FINISH (Metal|Polished|Matte) "Matte"
+    ADAPTER (Included|Optional|NotApplicable) "Included"
+    CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+    <!ELEMENT PRICE (#PCDATA)>
+    <!ATTLIST PRICE 
+    MSRP CDATA #IMPLIED
+    WHOLESALE CDATA #IMPLIED
+    STREET CDATA #IMPLIED
+    SHIPPING CDATA #IMPLIED>
+
+    <!ELEMENT NOTES (#PCDATA)>
+]>
+
+<CATALOG>
+
+    <PRODUCT NAME="ejemplo" CATEGORY="Table" PARTNUM="1" PLANT="Milwaukee" INVENTORY="InStock">
+        <SPECIFICATIONS WEIGHT="400" POWER="10">
+
+        </SPECIFICATIONS>
+
+        <OPTIONS FINISH="Polished" ADAPTER="Optional" CASE="Soft"></OPTIONS>
+
+        <PRICE MSRP="100" WHOLESALE="100" STREET="15" SHIPPING="1"></PRICE>
+
+        <NOTES>&AUTHOR;&COMPANY;&EMAIL;</NOTES>
+    </PRODUCT>
+
+</CATALOG>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE lugares [ 
+	<!ENTITY escritor "Miguel de Cervantes">
+	<!ENTITY fecha "29/09/1947">
+	<!ENTITY obra "El Quijote">
+	<!ELEMENT textos (texto)+>
+	<!ELEMENT texto (#PCDATA)>
+	
+
+]>
+
+
+<textos>
+	<texto> &obra; fue escrito por &escritor;</texto>
+	<texto> &escritor; nació el &quot;&fecha;&quot;</texto>
+</textos>

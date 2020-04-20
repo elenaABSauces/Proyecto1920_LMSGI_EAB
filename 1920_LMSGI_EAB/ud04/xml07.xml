@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE horario [
+	<!ELEMENT horafin (#PCDATA)>
+	<!ELEMENT asignatura (#PCDATA)>
+	<!ELEMENT horainicio (#PCDATA)>
+	<!ELEMENT horas (horainicio,asignatura,horafin)>
+	<!ELEMENT diadelasemana (horas+)>
+	<!ELEMENT horario (diadelasemana+)>
+	<!ATTLIST diadelasemana dia ID	#REQUIRED>
+
+]>
+<horario>
+	<diadelasemana dia="Lunes">
+		<horas>
+			<horainicio>08:30</horainicio>
+			<asignatura>EDD</asignatura>
+			<horafin>09:20</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>09:20</horainicio>
+			<asignatura>FOL</asignatura>
+			<horafin>10:10</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>10:10</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>11:00</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>11:25</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>12:15</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>12:15</horainicio>
+			<asignatura>S.INF</asignatura>
+			<horafin>13:05</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>13:05</horainicio>
+			<asignatura>S.INF</asignatura>
+			<horafin>13:55</horafin>
+		</horas>
+		
+	</diadelasemana>
+
+	<diadelasemana dia="Martes">
+		<horas>
+			<horainicio>08:30</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>09:20</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>09:20</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>10:10</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>10:10</horainicio>
+			<asignatura>LMSGI</asignatura>
+			<horafin>11:00</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>11:25</horainicio>
+			<asignatura>LMSGI</asignatura>
+			<horafin>12:15</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>12:15</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>13:05</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>13:05</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>13:55</horafin>
+		</horas>
+		
+	</diadelasemana>
+	
+	<diadelasemana dia="Miercoles">
+		<horas>
+			<horainicio>08:30</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>09:20</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>09:20</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>10:10</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>10:10</horainicio>
+			<asignatura>EDD</asignatura>
+			<horafin>11:00</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>11:25</horainicio>
+			<asignatura>FOL</asignatura>
+			<horafin>12:15</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>12:15</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>13:05</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>13:05</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>13:55</horafin>
+		</horas>
+		
+	</diadelasemana>
+	
+	<diadelasemana dia="Jueves">
+		<horas>
+			<horainicio>08:30</horainicio>
+			<asignatura>S.INF</asignatura>
+			<horafin>09:20</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>09:20</horainicio>
+			<asignatura>S.INF</asignatura>
+			<horafin>10:10</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>10:10</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>11:00</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>11:25</horainicio>
+			<asignatura>PROG</asignatura>
+			<horafin>12:15</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>12:15</horainicio>
+			<asignatura>LMSGI</asignatura>
+			<horafin>13:05</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>13:05</horainicio>
+			<asignatura>LMSGI</asignatura>
+			<horafin>13:55</horafin>
+		</horas>
+		
+	</diadelasemana>
+	
+	<diadelasemana dia="Viernes">
+		<horas>
+			<horainicio>08:30</horainicio>
+			<asignatura>EDD</asignatura>
+			<horafin>09:20</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>09:20</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>10:10</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>10:10</horainicio>
+			<asignatura>BBDD</asignatura>
+			<horafin>11:00</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>11:25</horainicio>
+			<asignatura>FOL</asignatura>
+			<horafin>12:15</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>12:15</horainicio>
+			<asignatura>S.INF</asignatura>
+			<horafin>13:05</horafin>
+		</horas>
+		
+		<horas>
+			<horainicio>13:05</horainicio>
+			<asignatura>S,INF</asignatura>
+			<horafin>13:55</horafin>
+		</horas>
+		
+	</diadelasemana>
+
+</horario>

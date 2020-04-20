@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mail fecha="14/01/2020">
+	<remitente>micorreo@correo.es</remitente>
+	<asunto>Enviar un mensaje</asunto>
+	<destinatarios>
+		<destinatario>sucorreo@correo.es</destinatario>
+		<destinatario>otrocorreo@correo.es</destinatario>
+	</destinatarios>
+	<mensaje>Solo tengo que enviarte un mensaje</mensaje>
+	<adjuntar>
+		<image type="image/png">imagen.png</image>
+	</adjuntar>
+</mail>

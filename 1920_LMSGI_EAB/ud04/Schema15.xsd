@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="liga">
+	<xs:complexType>
+	<xs:sequence>
+			<xs:element name="equipo" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="estadio">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="capacidad" type="xs:positiveInteger" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>	
+						<xs:element name="fechaCreacion" type="xs:date"/>
+						<xs:element name="puestoFin">
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+									<xs:maxInclusive value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="plantilla">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="jugador">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:string">
+													<xs:attribute name="dorsal">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:minInclusive value="1"/>
+																<xs:maxInclusive value="30"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>
+													<xs:attribute name="fechNac" type="xs:date"/>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+									<xs:attribute name="maxGoleador" type="xs:string"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="puestoEuropeo">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="respuesta" type="xs:boolean"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="competicion">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="copa">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:string">
+													<xs:attribute name="idCopa" use="required">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Za-z][A-Za-z][A-Za-z][0-9][0-9][0-9][0-9]"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>
+													<xs:attribute name="fechIniCopa" type="xs:date" use="required"/>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="europa">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:string">
+													<xs:attribute name="idEuro" use="required">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Za-z][A-Za-z][A-Za-z][0-9][0-9][0-9][0-9]"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>
+													<xs:attribute name="fechIniEuro" type="xs:date"/>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="idEquipo">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:pattern value="[A-Za-z][A-Za-z][A-Za-z][A-Za-z]"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="puestoInicio">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="20"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>	
+			<xs:attribute name="idLiga" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[A-Za-z][A-Za-z][0-9][0-9][0-9][0-9]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

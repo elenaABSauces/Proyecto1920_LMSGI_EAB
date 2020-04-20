@@ -1,0 +1,48 @@
+/* 
+ Autor.- Elena de Anton
+ Fecha.- 02/12/19
+ Ejercicio.- UD2_014
+ Documento.- estilo.css
+ */
+body{
+	font-family:calibri,arial,sans-serif;
+	background-image:url(../images/Le_petit_prince.png);
+	background-position:bottom right;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:250px;
+	margin-right:250px;
+}
+h1{
+	color:red;
+	background-color:#FFA500;
+	font-variant:small-caps;
+	text-transform:capitalize;
+	letter-spacing:5px;
+	padding:5px 0px;
+}
+#par1 h2{
+	color:#FFA500;
+}
+#par2 h2{
+	color:red;
+}
+ul{
+	margin-left:-40px;
+}
+li{
+	list-style-type:none;
+	display:inline;
+}
+a{
+	color:white;
+	text-decoration:none;
+	background-color:darkslateblue;
+	padding:10px;
+}
+#par2 a{
+	display:block;
+	margin-bottom:5px;
+	text-decoration:underline;
+	width:50%;
+}

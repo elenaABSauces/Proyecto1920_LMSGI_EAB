@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE Company [ 
+	<!ELEMENT Company (Employee*)>
+	<!ELEMENT Employee (FirstName,LastName,ContactNo+,Email*,Address)>
+	<!ELEMENT FirstName (#PCDATA)>
+	<!ELEMENT LastName (#PCDATA)>
+	<!ELEMENT ContactNo (#PCDATA)>
+	<!ELEMENT Email (#PCDATA)>
+	<!ELEMENT Address (City,State,Zip)>
+	<!ELEMENT City (#PCDATA)>
+	<!ELEMENT State (#PCDATA)>
+	<!ELEMENT Zip (#PCDATA)>
+
+]>
+<Company>
+	<Employee>
+		<FirstName>Elena</FirstName>
+		<LastName>de Anton</LastName>
+		<ContactNo>645249705</ContactNo>
+		<Email>elena.antbar@educa.jcyl.es</Email>
+		<Address>
+			<City>Benavente</City>
+			<State>Zamora</State>
+			<Zip>49600</Zip>
+		</Address>
+	</Employee>
+</Company>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Autor.- Elena de Anton
+Fecha.- Martes 31 de marzo de 2020
+Fichero.- manual.xml
+Requerimientos.- 
+-->
+<!DOCTYPE manual [
+<!ELEMENT manual (titulo,subtitulo?,fecha_creacion,sistema,url*,paso+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT fecha_creacion (#PCDATA)>
+<!ELEMENT sistema (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT paso (comando,descripcion)>
+<!ELEMENT comando (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ATTLIST manual codigo CDATA #REQUIRED>
+<!ATTLIST sistema version CDATA #REQUIRED>
+<!ATTLIST sistema tipo (x64|x84) #REQUIRED>
+<!ATTLIST url pagina CDATA #IMPLIED>
+<!ATTLIST manual xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST manual xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+]>
+
+
+<manual codigo="UBU18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="manualSchema.xsd">
+    
+    <titulo>Servidor de Ubuntu</titulo>
+    <subtitulo>Manual de instalación y configuración de Apache2</subtitulo>
+    <fecha_creacion>2020-03-31</fecha_creacion>
+    <sistema version="18.04" tipo="x64">Ubuntu</sistema>
+    <url pagina="oficial">ubuntu</url>
+    <url pagina="wiki">wikiubuntu</url>
+    <paso>
+        <comando>sudo apt update</comando>
+        <descripcion>actualizacion del repositorio</descripcion>
+    </paso>
+    <paso>
+        <comando>sudo apt install apache2</comando>
+        <descripcion>Instalacion del servidor HTTP Apache2</descripcion>
+    </paso>
+    <paso>
+        <comando>sudo service apache2 status</comando>
+        <descripcion>Comprobacion del estado del servicio</descripcion>
+    </paso>
+    <paso>
+        <comando>sudo adduser --home /var /www /html --group www-data operadorweb</comando>
+        <descripcion>Comprobacion del estado del servicio</descripcion>
+    </paso>
+    <paso>
+        <comando>sudo chmod -R 2775 /var/www/html</comando>
+        <descripcion>Cambiar los permisos de forma recursiva al directorio html, de forma qu eel usuario tenga todos los permisos, el grupo tenga todos los permisos y el resto lectura y ejecucion</descripcion>
+    </paso>
+    <paso>
+        <comando>sudo chawn -R operadorweb:www-data /var /www/html</comando>
+        <descripcion>Cambiar el propietario de la carpeta html</descripcion>
+    </paso>
+</manual>

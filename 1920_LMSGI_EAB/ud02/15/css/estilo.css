@@ -1,0 +1,110 @@
+﻿/* 
+ Autor.- Elena de Anton
+ Fecha.- 03/12/19
+ Ejercicio.- UD2_015
+ Documento.- estilo.css
+ */
+ body{
+	font-family:calibri,arial,sans-serif;
+	background-image:url(../images/Le_petit_prince.png);
+	background-position:top right;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:250px;
+	margin-right:250px;
+}
+h1{
+	color:#FF4500;
+	background-color:#FFA500;
+	font-variant:small-caps;
+}
+.par1{
+	color:green;
+	background-color:lightblue;
+	font-weight:bold;
+}
+div{
+	padding:5px;
+}
+.static{
+	border:2px solid #E9967A;
+}
+.relative{
+	border:2px dotted #9932CC;
+	position:relative;
+	left:5%;
+}
+.fixed{
+	background-color:#FFB973;
+	border:2px dashed green;
+	position:fixed;
+	right:0px;
+	bottom:100px;
+	width:300px;
+}
+.relative1{
+	border:2px solid green;
+	position:relative;
+	height:150px;
+}
+.absolute1{
+	border:2px solid greenyellow;
+	position:absolute;
+	right:5px;
+	bottom:5px;
+	width:50%;
+	height:50%;
+}
+.sticky{
+	position:sticky;
+	top:0px;
+	color:greenyellow;
+	background-color:green;
+	border:2px solid greenyellow;
+	border-radius:20px;
+	text-align:center;
+}
+.img1{
+	position:absolute;
+	height:150px;
+	z-index:-1;
+}
+.container{
+	position:relative;
+	border:2px solid #9932CC;
+	height:200px;
+}
+.container div{
+	position:absolute;
+	border:2px solid #9932CC;
+	background-color:#FFA500;
+	color:#9932CC;
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:18px;
+}
+.container img{
+	position:absolute;
+	height:200px;
+	opacity:0.5;
+}
+.topleft{
+	top:8px;
+	left:8px;
+}
+.topright{
+	top:8px;
+	right:8px;
+}
+.center{
+	top:45%;
+	left:42%;
+}
+.bottomleft{
+	bottom:8px;
+	left:8px;
+}
+.bottomright{
+	bottom:8px;
+	right:8px;
+}

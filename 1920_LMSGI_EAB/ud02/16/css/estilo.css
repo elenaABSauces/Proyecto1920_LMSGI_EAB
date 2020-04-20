@@ -1,0 +1,101 @@
+﻿/* 
+ Autor.- Susana Fabián Antón
+ Fecha.- 05/12/19
+ Ejercicio.- UD2_016
+ Documento.- estilo.css
+ */
+*{ 
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	font-family:calibri,arial,sans-serif;
+}
+ul,ol{
+	list-style: none; 
+	}
+a{
+	text-decoration: none;
+	color:#000;
+	}
+
+body{
+	background-color:cornsilk;
+	min-height:100vh;
+	position:relative;
+	padding-bottom:80px;
+}
+.clearfix::after {
+	content:"";
+	clear:both;
+	display:table;
+}
+.topmenu{
+	background-color:darkseagreen;
+}
+.topmenu li{
+	display:inline-block;
+	padding:10px 0px;
+}
+.topmenu li a{
+	color:white;
+	padding:10px;
+}
+.topmenu li a:hover{
+	background-color:lightgray;
+}
+.active{
+	background-color:lightgreen;
+}
+.column{
+	float:left;
+}
+.sidemenu{
+	width:25%;
+}
+.content{
+	width:75%;
+}
+.sidemenu li a{
+	color:brown;
+	background-color:burlywood;
+	padding:10px;
+	margin:5px 15px;
+	display:block;
+}
+.sidemenu li a:hover{
+	color:burlywood;
+	background-color:chocolate;
+}
+.header{
+	color:brown;
+	background-color:lightgreen;
+	font-style:italic;
+	text-transform:capitalize;
+	font-variant:small-caps;
+	text-align:center;
+	font-size:1.2em;
+	padding:15px;
+	margin:10px;
+	margin-bottom:5px;
+}
+h2{
+	color:brown;
+	font-variant:small-caps;
+	letter-spacing:5px;
+	padding:10px;
+	margin:5px;
+}
+p{
+	margin:10px;
+}
+footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background-color:darkseagreen;
+	padding:10px;
+	height:60px;
+}
+footer p{
+	color:white;
+}
