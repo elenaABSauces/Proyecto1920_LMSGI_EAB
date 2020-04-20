@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
     Document   : 01.xsl
@@ -18,7 +17,7 @@
                 <title>01 XSLT Elena de Anton Barrio</title>
             </head>
             <body>
-                
+					<xsl:comment>Titulo</xsl:comment>
                 <header>
                     <h1>Información de las viviendas</h1>
                 </header>
