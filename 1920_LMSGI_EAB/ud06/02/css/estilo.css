@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 abr. 2020, 11:08:27
+    Author     : Elena de Anton
+*/
+body{
+	font-family: calibri, arial, sans-serif;
+	margin:0px;
+}
+h1,h2,h3{
+	padding-left:20px;
+}
+h1{
+	background-color:lightgrey;
+	color:green;
+	font-weight:bold;
+}
+h2{
+	color:lightgrey;
+	background-color:green;
+	font-weight:bold;
+}
+
+h3{
+	font-style:bold;
+	color:green;
+	border:2px solid yellowgreen;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+td,th{
+	border-bottom:1px solid lightgrey;
+}
+table{
+	
+	width: 550px;
+	margin:30px 100px;
+	border-collapse: collapse;
+	caption-side: bottom;
+}
+
+caption{
+
+	font-variant:small-caps;
+	color:green;
+	font-style: italic;
+
+}
+
+
+
+ footer{
+	 background-color:green;
+	 color:lightgray;
+	 text-align:right;
+	 font-weight:bold;
+	 padding:3px 7px;
+	 
+ }
