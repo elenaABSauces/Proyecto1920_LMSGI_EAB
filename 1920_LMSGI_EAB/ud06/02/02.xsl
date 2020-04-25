@@ -10,6 +10,12 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
     <xsl:template match="/">
+    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+        <xsl:text>
+        </xsl:text>
+        <xsl:apply-templates select="comment()"/>
+        <xsl:text>
+        </xsl:text>
         <html>
             <head>
                 <title>XSL 02 - Elena de Anton</title>
@@ -74,6 +80,8 @@
                 </caption>
             </table>
         </xsl:for-each>
-        
  </xsl:template>
+ <xsl:template match="comment()">
+    <xsl:comment><xsl:value-of select="."/></xsl:comment>
+</xsl:template>
 </xsl:stylesheet>

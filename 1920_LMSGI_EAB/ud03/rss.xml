@@ -1,23 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-        <title>Elena de Anton</title>
-        <copyright>
-            Elena de Antón &copy; 2019/20
-        </copyright>
         
-            <link>http://eab.ieslossauces.es/</link>
-            <description>Sitio Web de Elena de Anton</description>
-            <pubDate>21 de Abril de 2020</pubDate>
-            
-         
+        <title>Elena de Anton</title>
+        <copyright> 2019-2020. Elena de Anton. Todos los Derechos Reservados.</copyright>
+        <link>http://eab.ieslossauces.es/</link>
+        <description>Sitio Web de Elena de Anton</description>
+        <pubDate>21 de Abril de 2020</pubDate>
+			
         <item>
-            <title>Practica 1 XSLT</title>
-            <link>
-                http://eab.ieslossauces.es/assets/sources/ud06/01/01.xml
-            </link>
-            <description>Practica 1 XSLT</description>
-            <pubDate>16 de Abril de 2020</pubDate>
+            <title>Practica 2 XSLT</title>
+            <link> http://eab.ieslossauces.es/ud06/02/02.xml</link>
+            <description>Practica 2 XSLT</description>
+            <pubDate>21 de Abril de 2020</pubDate>
         </item>
         
+        <item>
+            <title>Practica 1 XSLT</title>
+            <link> http://eab.ieslossauces.es/ud06/01/01.xml</link>
+            <description>Practica 1 XSLT</description>
+            <pubDate>17 de Abril de 2020</pubDate>
+        </item>
+        
+        
+			
+		
+        
+
     </channel>
+
 </rss>

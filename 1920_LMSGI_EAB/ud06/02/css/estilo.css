@@ -28,7 +28,7 @@ h2{
 h3{
 	font-style:bold;
 	color:green;
-	border:2px solid yellowgreen;
+	border:2px solid rgb(153, 205, 50);
 	font-variant:small-caps;
 	font-weight:bold;
 }
