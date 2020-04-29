@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="03.xsl"?>
+<!-- Creado por.- Amor Rodríguez -->
+<!-- Fecha: 28/04/2020 -->
+<!--  Descripcion.- Informacion de peliculas -->
+<peliculas>
+	<pelicula>
+		<nombre>La invenci&#243;n de Hugo</nombre>
+		<valoracion puntos="7"/>
+		<publico>Todos los p&#250;blicos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>La piel que habito</nombre>
+		<valoracion puntos="4"/>
+		<publico>Adultos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>Los descencientes</nombre>
+		<valoracion puntos="6"/>
+		<publico>Mayores de 12</publico>
+	</pelicula>
+        <pelicula>
+            <nombre>El hombre invisible</nombre>
+            <valoracion puntos="8"/>
+            <publico>Mayores de 16</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>La candidata perfecta</nombre>
+            <valoracion puntos="7"/>
+            <publico>Mayores de 12</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>Aguas oscuras</nombre>
+            <valoracion puntos="6"/>
+            <publico>Adultos</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>Richard Jewell</nombre>
+            <valoracion puntos="3"/>
+            <publico>Mayores de 16</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>La camarista</nombre>
+            <valoracion puntos="6"/>
+            <publico>Mayores de 12</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>Queen Slim</nombre>
+            <valoracion puntos="2"/>
+            <publico>Adultos</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>Judy</nombre>
+            <valoracion puntos="5"/>
+            <publico>Mayores de 12</publico>
+        </pelicula>
+        <pelicula>
+            <nombre>El huevo del dinosaurio</nombre>
+            <valoracion puntos="5"/>
+            <publico>Todos los p&#250;blicos</publico>
+        </pelicula>
+</peliculas>

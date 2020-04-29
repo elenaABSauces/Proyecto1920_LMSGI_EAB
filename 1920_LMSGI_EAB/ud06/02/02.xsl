@@ -40,11 +40,14 @@
                     </header>
                         <xsl:apply-templates select="listatickets"/>
                 </main>
-            </body>
-            <footer>
+
+                 <footer>
                 <p>NÚMERO DE TICKETS: <xsl:value-of select="count(listatickets/ticket)"/></p>
                 <p>TOTAL DE TICKETS: <xsl:value-of select="sum(listatickets/ticket/total)"/></p>
             </footer>
+            
+            </body>
+           
         </html>
 
     </xsl:template>
