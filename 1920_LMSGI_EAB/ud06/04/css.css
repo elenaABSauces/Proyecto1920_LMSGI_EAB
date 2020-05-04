@@ -8,6 +8,8 @@
     box-sizing: border-box;
     font-family: Permanent Market;
     font-style: bold;
+    text-align:center;
+
 }
 body{
     margin:0px;
@@ -18,6 +20,10 @@ div{
     margin-bottom: 1%;
     background-color: rgb(166, 195, 197);
 }
+
+p{
+    text-overflow: ellipsis;
+}
 h1{
     background-color: rgb(80, 74, 129);
     color: rgb(166, 195, 197);
@@ -25,9 +31,4 @@ h1{
 h2{
     background-color: rgb(80, 74, 129);
     color:rgb(166, 195, 197);
-}
-h3{
-    background-color: rgb(80, 74, 129);
-    color:rgb(166, 195, 197);
-    
 }
