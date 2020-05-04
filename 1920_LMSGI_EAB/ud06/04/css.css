@@ -1,0 +1,33 @@
+
+/* 
+    Created on : 4 de mayo de 2020
+    Author     : Elena de Anton
+*/
+*{
+    width:auto;
+    box-sizing: border-box;
+    font-family: Permanent Market;
+    font-style: bold;
+}
+body{
+    margin:0px;
+    background-size: 6.8%;
+}
+div{
+    border: rgb(80, 74, 129) solid 5px;
+    margin-bottom: 1%;
+    background-color: rgb(166, 195, 197);
+}
+h1{
+    background-color: rgb(80, 74, 129);
+    color: rgb(166, 195, 197);
+}
+h2{
+    background-color: rgb(80, 74, 129);
+    color:rgb(166, 195, 197);
+}
+h3{
+    background-color: rgb(80, 74, 129);
+    color:rgb(166, 195, 197);
+    
+}

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    Autor: Elena de Anton
+    Archivo: 04.dtd
+-->
+<!ELEMENT actividades (actividad)*>
+<!ELEMENT actividad (codigo,titulo,fecha_inicio,sesiones+)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT sesiones (minutos_sesion,sesiones_semana)>
+<!ELEMENT minutos_sesion (#PCDATA)>
+<!ELEMENT sesiones_semana (#PCDATA)>
+
+<!ATTLIST actividades
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+              xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST actividad
+              nivel (infantil|adultos) #IMPLIED>
+ <!ATTLIST sesiones
+              intensidad (suave|moderada|fuerte) #IMPLIED>

@@ -6,27 +6,34 @@
         <copyright> 2019-2020. Elena de Anton. Todos los Derechos Reservados.</copyright>
         <link>http://eab.ieslossauces.es/</link>
         <description>Sitio Web de Elena de Anton</description>
-        <pubDate>21 de Abril de 2020</pubDate>
+        <lastBuildDate>Thu, 30 Apr 2020 07:05:00 GMT</lastBuildDate>
 			
+        <item>
+            <title>Practica 4 XSLT</title>
+            <link> http://eab.ieslossauces.es/ud06/04/04.xml</link>
+            <description>Informacion de actividad en un gimnasio</description>
+            <pubDate>Mon, 04 Apr 2020 13:00:00 GMT</pubDate>
+        </item>
+        
         <item>
             <title>Practica 3 XSLT</title>
             <link> http://eab.ieslossauces.es/ud06/03/03.xml</link>
             <description>Informacion de Peliculas</description>
-            <pubDate>29 de Abril de 2020</pubDate>
+            <pubDate>Wed, 29 Apr 2020 19:00:00 GMT</pubDate>
         </item>
         
         <item>
             <title>Practica 2 XSLT</title>
             <link> http://eab.ieslossauces.es/ud06/02/02.xml</link>
             <description>Practica 2 XSLT</description>
-            <pubDate>21 de Abril de 2020</pubDate>
+            <pubDate>Wed, 22 Apr 2020 19:00:00 GMT</pubDate>
         </item>
         
         <item>
             <title>Practica 1 XSLT</title>
             <link> http://eab.ieslossauces.es/ud06/01/01.xml</link>
             <description>Practica 1 XSLT</description>
-            <pubDate>17 de Abril de 2020</pubDate>
+            <pubDate>Wed, 22 Apr 2020 19:00:00 GMT</pubDate>
         </item>
         
         

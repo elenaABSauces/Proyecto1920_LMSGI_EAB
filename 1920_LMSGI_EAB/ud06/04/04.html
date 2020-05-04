@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+        <!-- Creado por.- Elena de Anton --><!-- Fecha: 30/04/2020 --><!-- Descripcion.- Información de activida de un gimnasio -->
+        <html lang="es">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>XSLT 04 Elena de Anton</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elena de Anton">
+        <meta name="application-name" content="AppWeb de LMSGI">
+        <meta name="description" content="Informacion peliculas">
+        <meta name="keywords" content="peliculas, puntos, xslt, xml">
+        <meta name="robots" content="index, follow">
+        <link href="css.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Practica XPath 04 - 01</h1>
+        <div>
+            <h2>1.TODOS LOS ELEMENTOS DE LAS ACTIVIDADES INFANTILES.</h2>
+            <p>Opcion A --------- //actividad[@nivel="infantil"]/*-------</p>
+            <div>
+                <hr>
+                <p>codigo: A01</p>
+                <p>titulo: Al agua patos</p>
+                <p>fecha_inicio: 2017-01-15</p>
+                <p>sesiones: 45 3</p>
+            </div>
+            <div>
+                <hr>
+                <p>codigo: A04</p>
+                <p>titulo: Socorrismo</p>
+                <p>fecha_inicio: 2017-01-15</p>
+                <p>sesiones: 45 2</p>
+            </div>
+            <div>
+                <hr>
+                <p>codigo: A05</p>
+                <p>titulo: Perfeccionamiento en el agua</p>
+                <p>fecha_inicio: 2017-01-15</p>
+                <p>sesiones: 45 2</p>
+            </div>
+        </div>
+        <h1>Practica XPath 04 - 02</h1>
+        <div>
+            <h2>EL NOMBRE DE LAS ACTIVIDADES PARA ADULTOS.</h2>
+            <p>Opcion A --------- //actividad[@nivel="adultos"]/titulo-------</p>
+            <div>
+                <p>Spinning y agua</p>
+            </div>
+            <div>
+                <p>Spinning en el agua</p>
+            </div>
+            <div>
+                <p>Aprender a nadar</p>
+            </div>
+        </div>
+        <h1>Practica XPath 04 - 03. El nombre de las actividades de adultos.</h1>
+        <div>
+            <h2>OPCION A //actividad[sesiones/sesiones_semana='2']/titulo</h2>
+            <div>
+                <p>Spinning en el agua</p>
+            </div>
+            <div>
+                <p>Socorrismo</p>
+            </div>
+            <div>
+                <p>Perfeccionamiento en el agua</p>
+            </div>
+            <div>
+                <p>Aprender a nadar</p>
+            </div>
+        </div>
+        <div>
+            <h2>OPCION B //sesiones[sesiones_semana='2']/../titulo</h2>
+            <div>
+                <p>Spinning en el agua</p>
+            </div>
+            <div>
+                <p>Socorrismo</p>
+            </div>
+            <div>
+                <p>Perfeccionamiento en el agua</p>
+            </div>
+            <div>
+                <p>Aprender a nadar</p>
+            </div>
+        </div>
+        <div>
+            <h2>OPCION C //sesiones[sesiones_semana='2']/parent::node()/titulo</h2>
+            <div>
+                <p>Spinning en el agua</p>
+            </div>
+            <div>
+                <p>Socorrismo</p>
+            </div>
+            <div>
+                <p>Perfeccionamiento en el agua</p>
+            </div>
+            <div>
+                <p>Aprender a nadar</p>
+            </div>
+        </div>
+        <h1>Practica XPath 04 - 04. Cuenta el numero de actividades.</h1>
+        <div>
+            <h2>OPCION A count(//actividad)</h2>
+            Numero de actividades: 6
+        </div>
+        <h1>Practica XPath 04 - 05. Cuenta el numero de actividades infantiles.</h1>
+        <div>
+            <h2>OPCION A count(//actividad[@nivel='infantil'])</h2>
+            Numero de actividades infantiles: 3
+        </div>
+        <h1>
+            Practica XPath 04 - 06
+            <br>
+            Convertir el numero de actividades a string.
+        </h1>
+        <div>
+            <h2>OPCION A string(count(//actividad))</h2>
+            Numero de actividades infantiles: 6
+        </div>
+        <h1>Practica XPath 04 - 07. Suma de las sesiones semanales de las actividades para adultos.</h1>
+        <div>
+            <h2>OPCION A sum(//actividad[@nivel='adultos']/sesiones/sesiones_semana)</h2>
+            Suma de las sesiones semanales de las actividades para adultos: 7
+        </div>
+        <h1>
+            Practica XPath 04 - 08
+            <br>
+            Nodos de la actividad de codigo A06
+        </h1>
+        <div>
+            <h2>OPCION A //actividad[codigo='A06']/descendant::*</h2>
+            <p>codigo : A06</p>
+            <p>titulo : Aprender a nadar</p>
+            <p>fecha_inicio : 2017-02-15</p>
+            <p>minutos_sesion : 30</p>
+            <p>sesiones_semana : 2</p>
+        </div>
+    </body>
+</html>

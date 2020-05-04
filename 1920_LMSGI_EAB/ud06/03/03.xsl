@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
     Document   : 03.xsl
     Created on : 28 de abril de 2020
-    Author     : Elena de Antón
+    Author     : Elena de AntÃ³n
     Description:
 -->
 
@@ -15,8 +16,8 @@
         <xsl:text>
         </xsl:text>
         <html>
-            <head>
-                <title>XSL 03 Elena de Anton</title>
+            <head lang="es">
+                <title>XSLT 03 Elena de Anton</title>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta name="author" content="Elena de Anton"/>
@@ -31,7 +32,7 @@
             <body>
                 <section>
                     <header>
-                        <h1>Información de películas</h1>
+                        <h1>InformaciÃ³n de pelÃ­culas</h1>
                     </header>
                     <xsl:apply-templates select="peliculas"/>
                 </section>
@@ -77,5 +78,8 @@
                 </table>
             </article>
         </xsl:for-each>
+    </xsl:template>
+        <xsl:template match="comment()">
+        <xsl:comment><xsl:value-of select="."/></xsl:comment>
     </xsl:template>
 </xsl:stylesheet>

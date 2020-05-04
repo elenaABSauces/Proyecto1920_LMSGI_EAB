@@ -1,150 +1,302 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://eab.ieslossauces.es/</loc>
+  <lastmod>2020-05-04T11:56:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
 <url>
   <loc>http://eab.ieslossauces.es/index.html</loc>
+  <lastmod>2020-05-04T11:56:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/html.html</loc>
+  <lastmod>2020-05-04T11:56:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/css.html</loc>
+  <lastmod>2020-05-04T11:56:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/xml.html</loc>
+  <lastmod>2020-05-04T11:56:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/xpath.html</loc>
+  <lastmod>2020-05-04T11:56:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/xstl.html</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud03/rss.xml</loc>
+  <lastmod>2020-05-04T12:01:59+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/01/UD2_01.pdf</loc>
+  <lastmod>2020-04-29T17:38:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/01/index.html</loc>
+  <lastmod>2020-04-29T17:38:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/02/UD2_02.pdf</loc>
+  <lastmod>2020-04-29T17:38:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/02/index.html</loc>
+  <lastmod>2020-04-29T17:38:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/03/UD2_02.pdf</loc>
+  <lastmod>2020-05-04T12:04:08+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/03/index.html</loc>
+  <lastmod>2020-04-29T17:38:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/04/UD2_04.pdf</loc>
+  <lastmod>2020-04-29T17:38:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/04/index.html</loc>
+  <lastmod>2020-04-29T17:38:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/05/UD2_05.pdf</loc>
+  <lastmod>2020-04-29T17:38:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/05/index.html</loc>
+  <lastmod>2020-04-29T17:38:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/06/UD2_06.pdf</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud02/06/index.html</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud02/07/UD2_07.pdf</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud02/07/index.html</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud02/08/UD2_08.pdf</loc>
+  <lastmod>2020-04-29T17:38:45+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/08/index.html</loc>
+  <lastmod>2020-04-29T17:38:46+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/09/UD2_09.pdf</loc>
+  <lastmod>2020-04-29T17:38:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/09/index.html</loc>
+  <lastmod>2020-04-29T17:38:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/10/UD2_10.pdf</loc>
+  <lastmod>2020-04-29T17:38:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/10/index.html</loc>
+  <lastmod>2020-04-29T17:38:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/11/UD2_11.pdf</loc>
+  <lastmod>2020-04-29T17:38:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/11/index.html</loc>
+  <lastmod>2020-04-29T17:38:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/12/UD2_12.pdf</loc>
+  <lastmod>2020-04-29T17:38:50+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/12/index.html</loc>
+  <lastmod>2020-04-29T17:38:50+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/13/UD2_13.pdf</loc>
+  <lastmod>2020-04-29T17:38:51+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/13/index.html</loc>
+  <lastmod>2020-04-29T17:38:51+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/14/UD2_14.pdf</loc>
+  <lastmod>2020-04-29T17:38:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/14/index.html</loc>
+  <lastmod>2020-04-29T17:38:51+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/15/UD2_15.pdf</loc>
+  <lastmod>2020-04-29T17:38:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/15/index.html</loc>
+  <lastmod>2020-04-29T17:38:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/16/UD2_16.pdf</loc>
+  <lastmod>2020-04-29T17:38:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/16/index.html</loc>
+  <lastmod>2020-04-29T17:38:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/17/UD2_17.pdf</loc>
+  <lastmod>2020-04-29T17:38:54+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/ud4_01.pdf</loc>
+  <lastmod>2020-04-29T17:39:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/ud4_02.pdf</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud04/xml01.xml</loc>
+  <lastmod>2020-05-04T12:04:08+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/Schema01.xsd</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud04/xml02.xml</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/Schema02.xsd</loc>
-</url>
-<url>
-  <loc>http://eab.ieslossauces.es/ud04/xml03.xml</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/Schema03.xsd</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://eab.ieslossauces.es/ud04/xml04.xml</loc>
+  <loc>http://eab.ieslossauces.es/ud04/Schema04.xsd</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud04/Schema05.xsd</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud04/Schema06.xsd</loc>
+  <lastmod>2020-04-29T17:39:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud04/Schema14.xsd</loc>
+  <lastmod>2020-04-29T17:39:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud04/Schema15.xsd</loc>
+  <lastmod>2020-04-29T17:39:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/ud5-01.pdf</loc>
+  <lastmod>2020-04-29T17:39:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/ud5-02.pdf</loc>
+  <lastmod>2020-04-29T17:39:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/ud5-03.pdf</loc>
+  <lastmod>2020-04-29T17:39:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/ud5-04.pdf</loc>
+  <lastmod>2020-04-29T17:39:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/04.xsd</loc>
+  <lastmod>2020-04-29T17:39:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/ud5-05.pdf</loc>
+  <lastmod>2020-04-29T17:39:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/05.xsd</loc>
+  <lastmod>2020-04-29T17:39:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud05/07.xsd</loc>
+  <lastmod>2020-04-29T17:39:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud06/01/Practica1XSLT.pdf</loc>
+  <lastmod>2020-05-04T12:02:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud06/02/Practica2XSLT.pdf</loc>
+  <lastmod>2020-05-04T12:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud06/03/Practica3XSLT.pdf</loc>
+  <lastmod>2020-05-04T12:02:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud06/04/Pr%C3%A1ctica4XSLT.pdf</loc>
+  <lastmod>2020-05-04T12:04:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
