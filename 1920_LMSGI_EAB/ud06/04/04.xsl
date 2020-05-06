@@ -9,25 +9,20 @@
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html"/>
+    <xsl:import href="../plantilla.xsl"/>
+    <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
-    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-        <xsl:text>
-        </xsl:text>
+        
+        <xsl:call-template name="doctype"/>
         <xsl:apply-templates select="comment()"/>
-        <xsl:text>
-        </xsl:text>
+         
         <html lang="es">
             <head>
                 <title>XSLT 04 Elena de Anton</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <meta name="author" content="Elena de Anton"/>
+                <xsl:call-template name="miHead"/>
                 <meta name="application-name" content="AppWeb de LMSGI"/>
                 <meta name="description" content="Informacion de actividad en un gimnasio"/>
                 <meta name="keywords" content="actividad, gimnasio, xslt, xml"/>
-                <meta name="robots" content="index, follow"/>
-                <link href="css.css" rel="stylesheet" type="text/css"/>
-                <link rel="icon" href="favicon.ico" type="image/x-icon"/>
             </head>
             <body>
                 <xsl:apply-templates select="actividades"/>
@@ -39,14 +34,21 @@
         <h1>1.TODOS LOS ELEMENTOS DE LAS ACTIVIDADES INFANTILES.</h1>
         <div>
             <h2>--------- //actividad[@nivel="infantil"]/*-------</h2>
-            <xsl:for-each select="actividades/actividad[@nivel='infantil']/*/text()
-">
+            <xsl:for-each select="actividades/actividad[@nivel='infantil']/*/text()">
                 <div>
                     <hr/>
-                    <p><xsl:value-of select="concat(name(./codigo),': ',./codigo)"/></p>
-                    <p><xsl:value-of select="concat(name(./titulo),': ',./titulo)"/></p>
-                    <p><xsl:value-of select="concat(name(./fecha_inicio),': ',./fecha_inicio)"/></p>
-                    <p><xsl:value-of select="concat(name(./sesiones),': ',./sesiones/minutos_sesion,' ',./sesiones/sesiones_semana)"/></p>
+                    <p>
+                        <xsl:value-of select="concat(name(./codigo),': ',./codigo)"/>
+                    </p>
+                    <p>
+                        <xsl:value-of select="concat(name(./titulo),': ',./titulo)"/>
+                    </p>
+                    <p>
+                        <xsl:value-of select="concat(name(./fecha_inicio),': ',./fecha_inicio)"/>
+                    </p>
+                    <p>
+                        <xsl:value-of select="concat(name(./sesiones),': ',./sesiones/minutos_sesion,' ',./sesiones/sesiones_semana)"/>
+                    </p>
                 </div>
             </xsl:for-each>
         </div>
@@ -56,7 +58,9 @@
             <h2>--------- //actividad[@nivel="adultos"]/titulo -------</h2>
             <xsl:for-each select="actividad[@nivel='adultos']/titulo/text()">
                 <div>
-                    <p><xsl:value-of select="."/></p>
+                    <p>
+                        <xsl:value-of select="."/>
+                    </p>
                 </div>
             </xsl:for-each>
         </div>
@@ -66,7 +70,9 @@
             <h2>-------- //sesiones[sesiones_semana='2']/../titulo -------</h2>
             <xsl:for-each select="actividad/sesiones[sesiones_semana='2']/../titulo">
                 <div>
-                    <p><xsl:value-of select="."/></p>
+                    <p>
+                        <xsl:value-of select="."/>
+                    </p>
                 </div>
             </xsl:for-each>
         </div>
@@ -99,9 +105,11 @@
         <div>
             <h2>------ //actividad[codigo='A06']/descendant::* -------</h2>
             <xsl:variable name="sesion" select="/actividades/actividad[./codigo='A06']/descendant::*"/> 
-                <xsl:for-each select="$sesion[not(name()='sesiones')]">
-                    <p><xsl:value-of select="name(.)"/> : <xsl:value-of select="."/></p>
-                </xsl:for-each>
+            <xsl:for-each select="$sesion[not(name()='sesiones')]">
+                <p>
+                    <xsl:value-of select="name(.)"/> : <xsl:value-of select="."/>
+                </p>
+            </xsl:for-each>
         </div>
     </xsl:template>
     <xsl:template match="comment()">

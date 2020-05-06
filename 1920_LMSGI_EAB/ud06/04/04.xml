@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="04.xsl" type="text/xsl"?>
-<!-- Creado por.- Elena de Anton -->
-<!-- Fecha: 04/05/2020 -->
-<!-- Descripcion.- Información de actividad de un gimnasio -->
-<actividades>
+<!DOCTYPE actividades SYSTEM "04.dtd">
 
+<!-- 
+    Creado por.- Elena de Anton 
+    Fecha: 06/05/2020 
+    Descripcion.- Información de actividad de un gimnasio 
+-->
+
+<actividades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
 	
 	<actividad nivel="infantil">
 		
