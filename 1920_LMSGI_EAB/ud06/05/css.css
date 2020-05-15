@@ -1,0 +1,37 @@
+*{
+    font-family:'Arial';
+    color:black;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+body{
+    
+    background-color: lightblue;
+}
+title{
+    text-align:center;
+    font-size: 100px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+article{
+    margin: 20px;
+}
+
+tr{
+    background-color: lightgray;
+  }
+
+ span{
+     font-weight: 5px;
+     color:olive;
+ }
+
+

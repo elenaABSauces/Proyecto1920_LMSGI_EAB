@@ -2,7 +2,7 @@
 
 <!--
     Document   : 04.xsl
-    Created on : 04 de mayo de 2020
+    Created on : 07 de mayo de 2020
     Author     : Elena de Anton
     Description:
         Purpose of transformation follows.
@@ -23,6 +23,10 @@
                 <meta name="application-name" content="AppWeb de LMSGI"/>
                 <meta name="description" content="Informacion de actividad en un gimnasio"/>
                 <meta name="keywords" content="actividad, gimnasio, xslt, xml"/>
+                <meta name="robots" content="index, follow"/>
+                <link href="css.css" rel="stylesheet" type="text/css"/>
+                <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+            
             </head>
             <body>
                 <xsl:apply-templates select="actividades"/>
