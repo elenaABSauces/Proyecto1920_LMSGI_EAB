@@ -6,8 +6,15 @@
         <copyright> 2019-2020. Elena de Anton. Todos los Derechos Reservados.</copyright>
         <link>http://eab.ieslossauces.es/</link>
         <description>Sitio Web de Elena de Anton</description>
-        <lastBuildDate>Mon, 06 May 2020 19:05:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 May 2020 14:05:00 GMT</lastBuildDate>
 			
+        <item>
+            <title>Examen </title>
+            <link> http://eab.ieslossauces.es/ud06/EX04_20050/04.xml</link>
+            <description>Examen</description>
+            <pubDate>Wed, 20 May 2020 14:00:00 GMT</pubDate>
+        </item>
+        
         <item>
             <title>Practica 5 XSLT</title>
             <link> http://eab.ieslossauces.es/ud06/05/05.xml</link>

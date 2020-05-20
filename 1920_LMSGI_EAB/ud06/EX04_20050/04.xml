@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="04.xsl"?>
+<!DOCTYPE manual  SYSTEM "04.dtd">
+<!--
+    Document   : 04.xml
+    Created on : 30 de marzo de 2020, 23:34
+    Modified on: 7 de mayo de 2020, 0:18
+    Author     : Elena de Anton
+    Description:
+        Examen 04 de LMSGI, contiene la documentacion de instalacion de un servicio
+-->
+
+<manual codigo="UBU18">
+    <titulo>Servidor Web en Ubuntu</titulo>
+    <subtitulo>Manual de instalación y configuración de Apache2</subtitulo>
+   
+    <fechaCreacion>2020-03-31</fechaCreacion>
+    <sistema version="18.04" tipo="x64">Ubuntu Server</sistema>
+    <url >http://ubuntu.com</url>
+    <url pagina="wiki">https://wiki.ubuntu.com</url>
+    <paso id="P01">
+        <comando>sudo apt update</comando>
+        <descripcion>Actualización del repositorio</descripcion>
+    </paso>
+    <paso id="P02">
+        <comando>sudo apt install apache2</comando>
+        <descripcion>Instalación del servidor HTTP Apache2</descripcion>
+    </paso>
+    <paso id="P03">
+        <comando>sudo service apache2 status</comando>
+        <descripcion>Comprobación del estado del servicio</descripcion>
+    </paso>
+    <paso id="P04">
+        <comando>sudo adduser --home /var/www/html --group www-data operadorweb</comando>
+        <descripcion>Creación del usuario operadorweb</descripcion>
+    </paso>
+    <paso id="P05">
+        <comando>sudo chmod -R 2775 /var/www/html</comando>
+        <descripcion>Cambiar los permisos de forma recursiva al directorio html, de forma que el usuario tenga 
+            todos los permisos, el grupo tenga todos los permisos y el resto lectura y ejecución
+        </descripcion>
+    </paso>
+    <paso id="P06">
+        <comando>sudo chown -R operadorweb:www-data /var/www/html</comando>
+        <descripcion>Cambiar el propietario de la carpeta html</descripcion>
+    </paso>
+</manual>

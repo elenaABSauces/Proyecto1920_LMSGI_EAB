@@ -45,13 +45,28 @@ main{
     justify-content: center;
 }
 
-.fila1 p{
+.content{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.fila1{
     border: 3px solid wheat;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-   
+    margin: 3%;
+}
+
+.fila2{
+    border: 3px solid wheat;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 /*footer*/

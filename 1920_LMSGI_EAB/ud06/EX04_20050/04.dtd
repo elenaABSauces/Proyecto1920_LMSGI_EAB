@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!ELEMENT manual (titulo, subtitulo?, (fechaCreacion | fechaModificacion), sistema,   url*, paso+)>
+    <!ELEMENT paso (comando,descripcion,foto?)>
+    <!ELEMENT titulo (#PCDATA)>
+     <!ELEMENT subtitulo (#PCDATA)>
+    <!ELEMENT fechaCreacion (#PCDATA)>
+    <!ELEMENT fechaModificacion (#PCDATA)>
+    <!ELEMENT sistema (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT comando (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+     <!ELEMENT foto (#PCDATA)>
+    <!ATTLIST manual codigo ID #REQUIRED>
+    <!ATTLIST url pagina (wiki|oficial|doc|repositorio) "oficial" >
+    <!ATTLIST paso id ID #REQUIRED>
+    <!ATTLIST sistema version CDATA #REQUIRED>
+    <!ATTLIST sistema tipo (x64|x86)  "x64" >
+    <!ATTLIST manual xmlns:xsi CDATA #IMPLIED>
+    <!ATTLIST manual xsi:noNamespaceSchemaLocation CDATA #IMPLIED>   

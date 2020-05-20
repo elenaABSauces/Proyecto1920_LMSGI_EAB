@@ -9,17 +9,17 @@
 
 <url>
   <loc>http://eab.ieslossauces.es/</loc>
-  <lastmod>2020-05-15T19:38:50+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/index.html</loc>
-  <lastmod>2020-05-15T19:38:50+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/html.html</loc>
-  <lastmod>2020-05-15T19:38:50+00:00</lastmod>
+  <lastmod>2020-05-20T15:13:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -39,7 +39,7 @@
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/xstl.html</loc>
-  <lastmod>2020-05-15T19:44:48+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -64,7 +64,7 @@
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud02/03/UD2_02.pdf</loc>
-  <lastmod>2020-05-15T19:46:02+00:00</lastmod>
+  <lastmod>2020-05-20T15:13:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -194,7 +194,7 @@
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud04/ud4_02.pdf</loc>
-  <lastmod>2020-05-15T19:46:02+00:00</lastmod>
+  <lastmod>2020-05-20T15:13:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -279,27 +279,32 @@
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud06/01/Practica1XSLT.pdf</loc>
-  <lastmod>2020-05-15T19:40:13+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud06/02/Practica2XSLT.pdf</loc>
-  <lastmod>2020-05-15T19:40:15+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud06/03/Practica3XSLT.pdf</loc>
-  <lastmod>2020-05-15T19:40:16+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:48+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud06/04/Practica4XSLT.pdf</loc>
-  <lastmod>2020-05-15T19:40:18+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://eab.ieslossauces.es/ud06/05/Practica5XSLT.pdf</loc>
-  <lastmod>2020-05-15T19:40:20+00:00</lastmod>
+  <lastmod>2020-05-20T15:06:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://eab.ieslossauces.es/ud06/EX04_20050/1920_examen04.pdf</loc>
+  <lastmod>2020-05-20T15:06:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
