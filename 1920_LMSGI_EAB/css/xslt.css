@@ -67,6 +67,16 @@ main{
     align-items: center;
     align-content: center;
     justify-content: center;
+    margin: 3%;
+}
+
+.fila3{
+    border: 3px solid wheat;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 3%;
 }
 
 /*footer*/
